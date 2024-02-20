@@ -151,6 +151,6 @@ h3 {
     color: #e08104;
     font-size: 14px;
     padding: 10px;
-    background-color: rgb(222, 241, 243);
+    /* background-color: rgb(222, 241, 243); */
     border-radius: 20px 20px 0px 0px;
 }
