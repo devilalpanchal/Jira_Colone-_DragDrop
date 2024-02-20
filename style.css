@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: black;
+}
+.firstbtn:hover{
+    background: rgb(222, 241, 243);
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+    padding-left: 10px;
+}
+.root {
+    margin-left: 300px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(222, 241, 243);
+    padding: 5rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.container {
+
+    width: 15rem;
+    height: 25rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+.secondbtn{
+    margin-top: 200px;
+}
+.btn {
+    margin-top: 30px;
+    outline: none;
+    border: 1px solid aliceblue;
+    width: 60%;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+#issue {
+    outline: none;
+    text-align: start;
+    margin-top: 30px;
+    width: 80%;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.child-card {
+    word-break: break-all;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: auto;
+
+}
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    background: black;
+}
+
+.first-navbar>div {
+
+    width: 120px;
+    padding: 20px;
+    color: white;
+}
+
+.first-navbar {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-navbar {
+    
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 270px;
+    margin-bottom: 10px;
+}
+
+.aside {
+    z-index: -1;
+    gap: 40px;
+    width: 280px;
+    height: 600px;
+    padding: 2px;
+    color: aliceblue;
+    background: black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#search{ 
+    width: 200%;
+    padding: 5px;
+    outline: none;
+}
+
+#create{
+    width: 200px;
+    padding: 5px;
+}
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    margin: 0;
+    margin-left: 380px;
+    text-align: center;
+    color: #e08104;
+    font-size: 14px;
+    padding: 10px;
+    background-color: rgb(222, 241, 243);
+    border-radius: 20px 20px 0px 0px;
+}
