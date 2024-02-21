@@ -41,9 +41,9 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
-.secondbtn{
+/* .secondbtn{
     margin-top: 200px;
-}
+} */
 .btn {
     margin-top: 30px;
     outline: none;
@@ -89,7 +89,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 130px;
+    height: 150px;
     background: black;
 }
 
