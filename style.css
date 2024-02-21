@@ -6,9 +6,9 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
-    background: black;
+    background:#ffffff;
 }
 .firstbtn:hover{
     background: rgb(222, 241, 243);
@@ -26,13 +26,16 @@ body {
     display: flex;
     gap: 3rem;
 }
+.navbar,.aside,.root{
+    background: #ffffff;
+}
 
 .container {
 
     width: 15rem;
     height: 25rem;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    background-color: aliceblue;
+    background-color: #f7f8f9;
     border-radius: 10px;
     padding: 10px;
     overflow: scroll;
@@ -41,9 +44,7 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
-/* .secondbtn{
-    margin-top: 200px;
-} */
+
 .btn {
     margin-top: 30px;
     outline: none;
@@ -53,6 +54,9 @@ body {
     border-radius: 10px;
     background-color: aliceblue;
     margin-bottom: 1rem;
+}
+.softwareName{
+    display: flex;
 }
 
 h3 {
@@ -89,41 +93,82 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    background: black;
+    height: 50px;
+border-bottom: 1px solid black;
 }
-
-.first-navbar>div {
-
-    width: 120px;
-    padding: 20px;
+.createBtn{
+    padding: 5px;
+    width: 60px;
+    border: none;
     color: white;
+    background: blue;
+    border-radius: 5px;
+}
+.inputFirst{
+    padding: 4px;
+outline: none;
+    /* margin-left: 70px; */
 }
 
+.upgrade1{
+    margin-left: 30px;
+    width: 100px;
+    background: white;
+    border: 1px solid blue;
+    padding: 8px;
+    border-radius: 5px;
+    color: blue;
+}
 .first-navbar {
-    gap: 50px;
+    gap: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.first-navbar>div {
+    padding: 5px;
+    color: rgb(58, 22, 22);
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+.nav1:hover {
+    font-weight: 600;
+    color: blue;
+    margin-top: 15px;
+    border-bottom: 3px solid blue;
+   
+}
+.logo{
+    width: 33px;
+    height: 30px;
+}
+.jiralogo{
+    width: 30px;
+    height: 25px;
+}
+.dropimage{
+    width: 16px;
+    height: 15px;
+}
 
-.second-navbar {
+/* .second-navbar {
     
     display: flex;
     justify-content: center;
     align-items: start;
     gap: 270px;
     margin-bottom: 10px;
-}
+} */
 
 .aside {
     z-index: -1;
-    gap: 40px;
+    /* gap: 40px; */
     width: 280px;
     height: 600px;
     padding: 2px;
-    color: aliceblue;
-    background: black;
+    color:black;
     position: absolute;
     display: flex;
     align-items: center;
