@@ -107,8 +107,8 @@ btn.forEach((item) => {
     console.log(input)
     input.classList.remove('hide')
     e.target.classList.add('hide')
-    let inputTag=e.target.nextElementSibling 
-    e.target.focus()
+    // let inputTag=e.target.nextElementSibling 
+    input.focus()
    
     // input.classList.remove('hide')
     // btn.classList.add('hide')
@@ -211,3 +211,11 @@ allContainer.forEach((item) => {
     box.appendChild(card)
   })
 })
+
+
+if (card == drop) {
+
+  
+  card.style.background = 'green'
+  
+}
