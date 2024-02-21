@@ -63,8 +63,9 @@ h3 {
     outline: none;
     text-align: start;
     margin-top: 30px;
-    width: 80%;
+    width: 100%;
     padding: 10px;
+    border: none;
 }
 
 .hide {
@@ -151,6 +152,5 @@ h3 {
     color: #e08104;
     font-size: 14px;
     padding: 10px;
-    /* background-color: rgb(222, 241, 243); */
     border-radius: 20px 20px 0px 0px;
 }
