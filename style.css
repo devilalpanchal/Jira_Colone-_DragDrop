@@ -62,7 +62,21 @@ body {
 h3 {
     text-align: center;
 }
-
+.myFirstApp{
+    display: flex;
+}
+.soft{
+    
+    font-size: 14px;
+}
+.projectSetting{
+    display: flex;
+    gap: 20px;
+}
+.second-navebar-insecond{
+    display: flex;
+    flex-direction: column;
+}
 #issue {
     outline: none;
     text-align: start;
@@ -85,16 +99,22 @@ h3 {
 
 }
 
+.planB,.plan{
+    font-size: 15px;
+    font-weight:500;
+}
+.plan,.myFirstApp{
+    margin-left: 15px;
+}
 .navbar {
-    position: -webkit-sticky;
-    position: sticky;
+   
     top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 50px;
-border-bottom: 1px solid black;
+border-bottom: 1px solid #e4e6ea;
 }
 .createBtn{
     padding: 5px;
@@ -107,7 +127,6 @@ border-bottom: 1px solid black;
 .inputFirst{
     padding: 4px;
 outline: none;
-    /* margin-left: 70px; */
 }
 
 .upgrade1{
@@ -122,7 +141,7 @@ outline: none;
 .first-navbar {
     gap: 4px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .first-navbar>div {
@@ -130,8 +149,14 @@ outline: none;
     color: rgb(58, 22, 22);
     display: flex;
     font-size: 14px;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+}
+.nav1{
+    color:black;
+    font-weight: 400;
+    font: bold;
+    font-size: 12px;
 }
 .nav1:hover {
     font-weight: 600;
@@ -162,18 +187,36 @@ outline: none;
     margin-bottom: 10px;
 } */
 
+.p{
+    font-size: 13px;
+}
+.imgep{
+    width: 30px;
+    height: 30px;
+}
 .aside {
-    z-index: -1;
-    /* gap: 40px; */
-    width: 280px;
-    height: 600px;
+    margin-left: 10px;
+    /* z-index: -1; */
+    gap: 10px;
+    width: 240px;
+    height: 100%;
     padding: 2px;
     color:black;
     position: absolute;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 50px;
+    /* padding-left: 30px; */
+    align-items: 10px;
+    justify-content: start;
     flex-direction: column;
+    border-right: 3px solid #e4e6ea;
+}
+.aside:hover {
+    z-index: 1;
+
+    border-right: 3px solid blue;
+
+    /* background-color: red; */
 }
 
 #search{ 
@@ -197,5 +240,50 @@ outline: none;
     color: #e08104;
     font-size: 14px;
     padding: 10px;
+    
     border-radius: 20px 20px 0px 0px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.code{
+    margin-bottom: 5px;
+    width: 100%;
+    border-bottom: 3px solid #e4e6ea;
+}
+.code:hover {
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+.paragraph{
+    text-align: center;
+}
+
+/********* Quickstart bittton  *************/
+.quickstart{
+    width: 20px;
+    height: 20px;
+}
+.Quickbutton{
+    position: absolute;
+    right: 200px;
+    top: 580px;
+}
+.lastbutton{
+
+    background: rgb(125, 62, 197);
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.quickdiv{
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 15px;
 }
