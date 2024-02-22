@@ -8,21 +8,25 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-    background:#ffffff;
+    background: #ffffff;
 }
-.hide{
+
+.hide {
     display: none;
 }
-.show{
+
+.show {
     display: block;
 }
-.firstbtn:hover{
+
+.firstbtn:hover {
     background: rgb(222, 241, 243);
     width: 100%;
     text-align: start;
     padding: 10px;
     padding-left: 10px;
 }
+
 .root {
     margin-left: 300px;
     width: 100%;
@@ -32,12 +36,14 @@ body {
     display: flex;
     gap: 3rem;
 }
-.navbar,.aside,.root{
+
+.navbar,
+.aside,
+.root {
     background: #ffffff;
 }
 
 .container {
-
     width: 15rem;
     height: 25rem;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
@@ -61,39 +67,49 @@ body {
     background-color: aliceblue;
     margin-bottom: 1rem;
 }
-.softwareName{
+
+.softwareName {
     display: flex;
 }
 
 h3 {
     text-align: center;
 }
-.myFirstApp{
+
+.myFirstApp {
     display: flex;
 }
-.soft{
-    
+
+.soft {
+
     font-size: 14px;
 }
-.projectSetting{
+
+.projectSetting {
     display: flex;
     gap: 20px;
 }
-.second-navebar-insecond{
+
+.second-navebar-insecond {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
-.setting{
+
+.setting {
     margin-left: 5px;
 }
-.proSetting,.addsetting{
+
+.proSetting,
+.addsetting {
     margin-left: 10px;
 }
-.proSetting{
+
+.proSetting {
     margin-top: 20px;
 }
+
 #issue {
     outline: none;
     text-align: start;
@@ -116,13 +132,17 @@ h3 {
 
 }
 
-.planB,.plan{
+.planB,
+.plan {
     font-size: 15px;
-    font-weight:500;
+    font-weight: 500;
 }
-.plan,.myFirstApp{
+
+.plan,
+.myFirstApp {
     margin-left: 15px;
 }
+
 .navbar {
     top: 0;
     display: flex;
@@ -130,9 +150,10 @@ h3 {
     justify-content: start;
     align-items: center;
     height: 50px;
-border-bottom: 1px solid #e4e6ea;
+    border-bottom: 1px solid #e4e6ea;
 }
-.createBtn{
+
+.createBtn {
     padding: 5px;
     width: 60px;
     border: none;
@@ -140,12 +161,13 @@ border-bottom: 1px solid #e4e6ea;
     background: blue;
     border-radius: 5px;
 }
-.inputFirst{
+
+.inputFirst {
     padding: 4px;
-outline: none;
+    outline: none;
 }
 
-.upgrade1{
+.upgrade1 {
     margin-left: 30px;
     width: 100px;
     background: white;
@@ -154,12 +176,14 @@ outline: none;
     border-radius: 5px;
     color: blue;
 }
+
 .first-navbar {
     gap: 4px;
     display: flex;
     justify-content: start;
     align-items: center;
 }
+
 .first-navbar>div {
     padding: 4px;
     color: rgb(58, 22, 22);
@@ -168,83 +192,78 @@ outline: none;
     justify-content: start;
     align-items: center;
 }
-.nav1{
-    color:black;
+
+.nav1 {
+    color: black;
     font-weight: 400;
     font: bold;
     font-size: 12px;
 }
+
 .nav1:hover {
     font-weight: 600;
     color: blue;
     margin-top: 15px;
     border-bottom: 3px solid blue;
-   
+
 }
-.logo{
+
+.logo {
     width: 33px;
     height: 30px;
 }
-.jiralogo{
+
+.jiralogo {
     width: 30px;
     height: 25px;
 }
-.dropimage{
+
+.dropimage {
     width: 16px;
     height: 15px;
 }
 
-/* .second-navbar {
-    
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 270px;
-    margin-bottom: 10px;
-} */
-
-.p{
+.p {
     font-size: 13px;
 }
-.imgep{
+
+.imgep {
     width: 30px;
     height: 30px;
 }
+
 .aside {
     margin-left: 10px;
-    /* z-index: -1; */
     gap: 10px;
     width: 240px;
     height: 100%;
     padding: 2px;
-    color:black;
+    color: black;
     position: absolute;
     display: flex;
     padding-top: 50px;
-    /* padding-left: 30px; */
     align-items: 10px;
     justify-content: start;
     flex-direction: column;
     border-right: 3px solid #e4e6ea;
 }
+
 .aside:hover {
     z-index: 1;
-
     border-right: 3px solid blue;
-
-    /* background-color: red; */
 }
 
-#search{ 
+#search {
     width: 200%;
     padding: 5px;
     outline: none;
 }
 
-#create{
+#create {
     width: 200px;
     padding: 5px;
 }
+
 .attribution {
     position: fixed;
     bottom: 0;
@@ -256,32 +275,36 @@ outline: none;
     color: #e08104;
     font-size: 14px;
     padding: 10px;
-    
+
     border-radius: 20px 20px 0px 0px;
 }
 
-.flex{
+.flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.code{
+
+.code {
     margin-bottom: 5px;
     width: 100%;
     border-bottom: 3px solid #e4e6ea;
 }
+
 .code:hover {
     color: blue;
     border-bottom: 3px solid blue;
 }
-.paragraph{
+
+.paragraph {
     font-size: 12px;
     width: 230px;
     margin-top: 80px;
     text-align: center;
 }
-.learn{
+
+.learn {
     font-size: 14px;
     font-weight: 500;
 }
@@ -296,25 +319,29 @@ outline: none;
 
 
 /********* Quickstart bittton  *************/
-.quickstart{
+.quickstart {
     width: 20px;
     height: 20px;
 }
-.quickstart1{
+
+.quickstart1 {
     width: 20px;
     height: 20px;
 }
-.quickstart1:hover{
+
+.quickstart1:hover {
     background: white;
     width: 25px;
     height: 25px;
 }
-.Quickbutton{
+
+.Quickbutton {
     position: absolute;
     right: 200px;
     top: 580px;
 }
-.lastbutton{
+
+.lastbutton {
 
     background: rgb(125, 62, 197);
     padding: 15px;
@@ -323,8 +350,12 @@ outline: none;
     flex-direction: row;
     gap: 10px;
 }
-.quickdiv{
+
+.quickdiv {
     font-weight: 700;
     color: #ffffff;
     font-size: 15px;
 }
+
+/******** to add Above Container of To do OR To done **********/
+
