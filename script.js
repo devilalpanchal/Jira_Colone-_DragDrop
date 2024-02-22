@@ -162,6 +162,31 @@ input.forEach((item) => {
   })
 })
 
+// to add function for quickstart button
+
+let Quickbutton = document.querySelector('.Quickbutton')
+let QuickStart1= document.querySelector('.quickstart1')
+let openQuick = document.querySelector('.yourCard')
+
+
+// QuickStart1.addEventListener('click',()=>{
+//   Quickbutton.classList.add('.hide')
+// })
+
+openQuick.addEventListener('click',()=>{
+  Quickbutton.classList.remove('.hide')
+})
+
+
+
+
+
+
+
+
+
+
+
 // input.addEventListener('keyup', (e) => {
 //   let todoContainer = document.querySelector('#to-do')
 //   // console.log(e)
