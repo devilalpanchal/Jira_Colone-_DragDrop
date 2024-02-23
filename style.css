@@ -5,6 +5,8 @@
 }
 
 body {
+    width: 100%;
+    height: 100vh;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -26,64 +28,7 @@ body {
     background: #ffffff;
 }
 
-
-
-.softwareName {
-    display: flex;
-}
-
-h3 {
-    text-align: center;
-}
-
-.myFirstApp {
-    display: flex;
-}
-
-.soft {
-
-    font-size: 14px;
-}
-
-.projectSetting {
-    display: flex;
-    gap: 20px;
-}
-
-.second-navebar-insecond {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-
-.setting {
-    margin-left: 5px;
-}
-
-.proSetting,
-.addsetting {
-    margin-left: 10px;
-}
-
-.proSetting {
-    margin-top: 20px;
-}
-
-
-.planB,
-.plan {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.plan,
-.myFirstApp {
-    margin-left: 15px;
-}
-
 /********* Navbar  Section ***********/
-
 .navbar {
     top: 0;
     display: flex;
@@ -92,6 +37,10 @@ h3 {
     align-items: center;
     height: 50px;
     border-bottom: 1px solid #e4e6ea;
+}
+
+.softwareName {
+    display: flex;
 }
 
 .searchimage1 {
@@ -171,15 +120,18 @@ h3 {
     height: 15px;
 }
 
-.p {
-    font-size: 13px;
+#search {
+    width: 200%;
+    padding: 5px;
+    outline: none;
 }
 
-.imgep {
-    width: 30px;
-    height: 30px;
+#create {
+    width: 200px;
+    padding: 5px;
 }
 
+/************* To ASIDE SECTION***********/
 .aside {
     margin-left: 10px;
     gap: 10px;
@@ -201,29 +153,9 @@ h3 {
     border-right: 3px solid blue;
 }
 
-#search {
-    width: 200%;
-    padding: 5px;
-    outline: none;
-}
-
-#create {
-    width: 200px;
-    padding: 5px;
-}
-
-.attribution {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    margin: 0;
-    margin-left: 380px;
-    text-align: center;
-    color: #e08104;
+.learn {
     font-size: 14px;
-    padding: 10px;
-    border-radius: 20px 20px 0px 0px;
+    font-weight: 500;
 }
 
 .flex {
@@ -251,60 +183,56 @@ h3 {
     text-align: center;
 }
 
-.learn {
-    font-size: 14px;
+.p {
+    font-size: 13px;
+}
+
+.imgep {
+    width: 30px;
+    height: 30px;
+}
+
+.setting {
+    margin-left: 5px;
+}
+
+.proSetting,
+.addsetting {
+    margin-left: 10px;
+}
+
+.proSetting {
+    margin-top: 20px;
+}
+
+.planB,
+.plan {
+    font-size: 15px;
     font-weight: 500;
 }
 
-
-/* remember for hover */
-/* .imageforinfo:hover{
-    box-shadow: #ffffff;
-    background: rgb(179, 11, 11);
-    border-radius: 10px;
-} */
-
-
-/********* Quickstart bittton  *************/
-.quickstart {
-    width: 20px;
-    height: 20px;
+.plan,
+.myFirstApp {
+    margin-left: 15px;
 }
 
-.quickstart1 {
-    width: 20px;
-    height: 20px;
-}
-
-.quickstart1:hover {
-    background: white;
-    width: 25px;
-    height: 25px;
-}
-
-.Quickbutton {
-    position: absolute;
-    right: 50px;
-    top: 580px;
-}
-
-.lastbutton {
-    background: rgb(125, 62, 197);
-    padding: 15px;
-    border-radius: 50px;
+.projectSetting {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    gap: 20px;
 }
 
-.quickdiv {
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 15px;
+.second-navebar-insecond {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.myFirstApp {
+    display: flex;
 }
 
 /******** to add Above Container of To do OR To done **********/
-
 .firstbar {
     display: flex;
     justify-content: start;
@@ -367,7 +295,6 @@ h3 {
 }
 
 /************* to Four Section **************/
-
 .tododoneContainer {
     display: flex;
     justify-content: start;
@@ -398,10 +325,11 @@ h3 {
     margin-left: 300px;
     width: 100%;
     height: 100vh;
-    background-color:#ffffff;
+    background-color: #ffffff;
     display: flex;
     gap: 1rem;
 }
+
 .container {
     width: 255px;
     height: 250px;
@@ -419,6 +347,7 @@ h3 {
     padding: 10px;
     padding-left: 10px;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -434,13 +363,13 @@ h3 {
     background-color: aliceblue;
     margin-bottom: 1rem;
 }
+
 #issue {
     outline: none;
     text-align: start;
     margin-top: 0px;
     width: 100%;
     height: 100px;
-    /* padding: 10px; */
     padding: 0px 0px 50px 10px;
     border: none;
 }
@@ -451,4 +380,57 @@ h3 {
     display: flex;
     align-items: center;
     height: auto;
+}
+
+/********* Quickstart bittton  *************/
+.quickstart {
+    width: 20px;
+    height: 20px;
+}
+
+.quickstart1 {
+    width: 20px;
+    height: 20px;
+}
+
+.quickstart1:hover {
+    background: white;
+    width: 25px;
+    height: 25px;
+}
+
+.Quickbutton {
+    position: absolute;
+    right: 50px;
+    top: 580px;
+}
+
+.lastbutton {
+    background: rgb(125, 62, 197);
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.quickdiv {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/********** TO Fotter  ************/
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    margin: 0;
+    margin-left: 380px;
+    text-align: center;
+    color: #e08104;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
 }
