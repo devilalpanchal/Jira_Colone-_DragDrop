@@ -11,6 +11,7 @@ body {
     background: #ffffff;
 }
 
+
 .hide {
     display: none;
 }
@@ -19,13 +20,6 @@ body {
     display: block;
 }
 
-.firstbtn:hover {
-    background: rgb(222, 241, 243);
-    width: 100%;
-    text-align: start;
-    padding: 10px;
-    padding-left: 10px;
-}
 
 .root {
     margin-top: 30px;
@@ -36,13 +30,6 @@ body {
     display: flex;
     gap: 1rem;
 }
-
-.navbar,
-.aside,
-.root {
-    background: #ffffff;
-}
-
 .container {
     width: 255px;
     height: 250px;
@@ -50,6 +37,20 @@ body {
     border-radius: 5px;
     padding: 10px;
     overflow: scroll;
+}
+
+.firstbtn:hover {
+    background: rgb(222, 241, 243);
+    width: 100%;
+    text-align: start;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+.navbar,
+.aside,
+.root {
+    background: #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -128,7 +129,6 @@ h3 {
     display: flex;
     align-items: center;
     height: auto;
-
 }
 
 .planB,
@@ -142,6 +142,8 @@ h3 {
     margin-left: 15px;
 }
 
+/********* Navbar  Section ***********/
+
 .navbar {
     top: 0;
     display: flex;
@@ -151,13 +153,15 @@ h3 {
     height: 50px;
     border-bottom: 1px solid #e4e6ea;
 }
-.searchimage1{
+
+.searchimage1 {
     height: 23px;
     width: 23px;
     position: absolute;
     top: 13px;
     right: 210px;
 }
+
 .createBtn {
     padding: 5px;
     width: 60px;
@@ -210,7 +214,6 @@ h3 {
     color: blue;
     margin-top: 15px;
     border-bottom: 3px solid blue;
-
 }
 
 .logo {
@@ -280,7 +283,6 @@ h3 {
     color: #e08104;
     font-size: 14px;
     padding: 10px;
-
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -347,7 +349,6 @@ h3 {
 }
 
 .lastbutton {
-
     background: rgb(125, 62, 197);
     padding: 15px;
     border-radius: 50px;
@@ -364,7 +365,7 @@ h3 {
 
 /******** to add Above Container of To do OR To done **********/
 
-.firstbar{
+.firstbar {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -373,7 +374,8 @@ h3 {
     margin-left: 300px;
     font-size: 14px
 }
-.Others12{
+
+.Others12 {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -382,11 +384,13 @@ h3 {
     gap: 670px;
     text-transform: capitalize;
 }
-.allimages{
+
+.allimages {
     display: flex;
     gap: 10px;
 }
-.thirdbar{
+
+.thirdbar {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -394,24 +398,29 @@ h3 {
     gap: 475px;
     margin-top: 40px;
 }
-.profile{
+
+.profile {
     display: flex;
     font-size: 14px;
 }
-.secondProfile{
+
+.secondProfile {
     font-size: 14px;
     display: flex;
     gap: 10px;
 }
-.Epic{
+
+.Epic {
     display: flex;
 }
-.inputInprofile{
+
+.inputInprofile {
     width: 120px;
     padding: 10px;
     outline: none;
 }
-.searchimage{
+
+.searchimage {
     position: absolute;
     top: 220px;
     left: 380px;
@@ -419,24 +428,25 @@ h3 {
 
 /************* to Four Section **************/
 
-.tododoneContainer{
+.tododoneContainer {
     display: flex;
     justify-content: start;
     align-items: center;
     margin-left: 300px;
     gap: 15px;
 }
-.tododoneContainer>div{
+
+.tododoneContainer>div {
     width: 255px;
     padding: 13px;
     font-size: 14px;
     border-radius: 5px;
-    background:#f7f8f9 ;
+    background: #f7f8f9;
     font-weight: 400;
     margin-top: 25px;
-
 }
-#PlusContainer{
+
+#PlusContainer {
     padding: 9px;
     width: 50px;
     text-align: center;
