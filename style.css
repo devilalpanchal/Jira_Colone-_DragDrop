@@ -5,15 +5,16 @@
 }
 
 body {
-    width: 100%;
-    height: 100vh;
+    /* width: 100%; */
+    /* height: 100vh; */
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     background: #ffffff;
 }
-
-
+.Main-Container{
+/* height: 100vh; */
+}
 .hide {
     display: none;
 }
@@ -28,8 +29,10 @@ body {
     background: #ffffff;
 }
 
+
 /********* Navbar  Section ***********/
 .navbar {
+    /* position: sticky; */
     top: 0;
     display: flex;
     flex-direction: column;
@@ -131,12 +134,14 @@ body {
     padding: 5px;
 }
 
+
 /************* To ASIDE SECTION***********/
 .aside {
+    z-index: -1;
     margin-left: 10px;
     gap: 10px;
     width: 240px;
-    height: 100%;
+    /* height: 100%; */
     padding: 2px;
     color: black;
     position: absolute;
@@ -172,14 +177,14 @@ body {
 }
 
 .code:hover {
-    color: blue;
-    border-bottom: 3px solid blue;
+    /* color: blue; */
+    border-bottom: 2px solid blue;
 }
 
 .paragraph {
-    font-size: 12px;
+    font-size: 10px;
     width: 230px;
-    margin-top: 120px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -231,6 +236,7 @@ body {
 .myFirstApp {
     display: flex;
 }
+
 
 /******** to add Above Container of To do OR To done **********/
 .firstbar {
@@ -294,6 +300,7 @@ body {
     left: 380px;
 }
 
+
 /************* to Four Section **************/
 .tododoneContainer {
     display: flex;
@@ -323,8 +330,8 @@ body {
 .root {
     margin-top: 30px;
     margin-left: 300px;
-    width: 100%;
-    height: 100vh;
+    /* width: 100%; */
+    /* height: 100vh; */
     background-color: #ffffff;
     display: flex;
     gap: 1rem;
@@ -382,6 +389,7 @@ body {
     height: auto;
 }
 
+
 /********* Quickstart bittton  *************/
 .quickstart {
     width: 20px;
@@ -419,6 +427,7 @@ body {
     color: #ffffff;
     font-size: 15px;
 }
+
 
 /********** TO Fotter  ************/
 .attribution {
