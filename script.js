@@ -102,20 +102,14 @@ input.forEach((item) => {
 })
 
 // to add function for quickstart button
-
 let Quickbutton = document.querySelector('.Quickbutton')
 let QuickStart1= document.querySelector('.quickstart1')
 let openQuick = document.querySelector('.yourCard')
 
 
-// QuickStart1.addEventListener('click',()=>{
-//   Quickbutton.classList.add('.hide')
-// })
-
 openQuick.addEventListener('click',()=>{
   Quickbutton.classList.remove('.hide')
 })
-
 
 let allContainer = document.querySelectorAll('.container')
 console.log(allContainer)
@@ -145,7 +139,26 @@ if (card == drop) {
   
 }
 
+// To add new Contaiener to write own done project
 
+
+let PlusContainer = document.querySelector('#PlusContainer')
+let NewFourContainerr= document.querySelector('.NewFourContainerr')
+PlusContainer.addEventListener('click',()=>{
+  let NewContaienr = document.createElement('div')
+  let NewInput = document.createElement('input')
+  NewInput.style.placeholder('write issue')
+  NewInput.style.classList.add('hide issue')
+  let Newbutton = document.createElement('button')
+  Newbutton.style.classList.add('btn thirdbtn hide')
+  Newbutton.textContent('+ create')
+  NewContaienr.style.classList.add('container')
+  NewFourContainerr.appendChild(PlusContainer)
+  PlusContainer.appendChild(Newbutton)
+  PlusContainer.appendChild(NewInpur)
+      console.log(PlusContainer)
+  
+})
 
 // btn.addEventListener('click', () => {
 

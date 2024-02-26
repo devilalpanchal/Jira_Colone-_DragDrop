@@ -12,9 +12,8 @@ body {
     font-style: normal;
     background: #ffffff;
 }
-.Main-Container{
-/* height: 100vh; */
-}
+
+
 .hide {
     display: none;
 }
@@ -254,7 +253,7 @@ body {
     justify-content: start;
     align-items: center;
     margin-left: 300px;
-    margin-top: 20px;
+    margin-top: 10px;
     gap: 670px;
     text-transform: capitalize;
 }
@@ -270,7 +269,7 @@ body {
     align-items: center;
     margin-left: 300px;
     gap: 475px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .profile {
@@ -296,8 +295,8 @@ body {
 
 .searchimage {
     position: absolute;
-    top: 220px;
-    left: 380px;
+    top: 179px;
+    left: 390px;
 }
 
 
@@ -328,7 +327,7 @@ body {
 }
 
 .root {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 300px;
     /* width: 100%; */
     /* height: 100vh; */
@@ -339,7 +338,7 @@ body {
 
 .container {
     width: 255px;
-    height: 250px;
+    height: 200px;
     background-color: #f7f8f9;
     border-radius: 5px;
     padding: 10px;
