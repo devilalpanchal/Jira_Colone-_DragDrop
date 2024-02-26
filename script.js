@@ -143,21 +143,21 @@ if (card == drop) {
 
 
 let PlusContainer = document.querySelector('#PlusContainer')
-let NewFourContainerr= document.querySelector('.NewFourContainerr')
+let NewFourContainerr= document.querySelector('.NewFourContainer')
 PlusContainer.addEventListener('click',()=>{
-  let NewContaienr = document.createElement('div')
+  let NewContainer = document.createElement('div')
   let NewInput = document.createElement('input')
   NewInput.style.placeholder('write issue')
   NewInput.style.classList.add('hide issue')
   let Newbutton = document.createElement('button')
   Newbutton.style.classList.add('btn thirdbtn hide')
   Newbutton.textContent('+ create')
-  NewContaienr.style.classList.add('container')
-  NewFourContainerr.appendChild(PlusContainer)
+  NewContainer.style.classList.add('container')
+  NewFourContainer.appendChild(PlusContainer)
   PlusContainer.appendChild(Newbutton)
   PlusContainer.appendChild(NewInpur)
       console.log(PlusContainer)
-  
+
 })
 
 // btn.addEventListener('click', () => {
