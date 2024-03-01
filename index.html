@@ -79,22 +79,24 @@
                 </div>
                 <div class="nav1">
                     <div class="dropbtn">Teams </div>
-                    
                     <div class="dropdown">
                         <img class="dropimage " src="./imges/drop.png" alt="">
                         <div class="dropdown-content">
-                            <a href="#">invite people to jira <img class="dropimage1" src="./imges/drop.png" alt=""> </a>
+                            <a href="#">invite people to jira <img class="dropimage1" src="./imges/drop.png" alt="">
+                            </a>
                             <a href="#">Create team <img class="dropimage1" src="./imges/drop.png" alt=""> </a>
-                           
+
                         </div>
                     </div>
                 </div>
                 <div class="nav1">
-                    <div class="dropbtn" >Plans</div>
-                    <div><img class="dropimage" src="./imges/drop.png" alt=""></div>
-                    <div class="dropdown-content">
-                        <a href="#">Plans <img class="dropimage1" src="./imges/drop.png" alt=""> </a>
-                        <a href="#">Apps <img class="dropimage1" src="./imges/drop.png" alt=""> </a>
+                    <div class="dropbtn">Plans</div>
+                    <div class="dropdown">
+                        <img class="dropimage " src="./imges/drop.png" alt="">
+                        <div class="dropdown-content">
+                            <a href="#">to create plan <img class="dropimage1" src="./imges/drop.png" alt=""> </a>
+                            <a href="#">Show plan<img class="dropimage1" src="./imges/drop.png" alt=""> </a>
+                        </div>
                     </div>
                 </div>
                 <div class="nav1">
@@ -107,7 +109,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div><button class="createBtn">create</button></div>
                 <div><button class="upgrade1">Upgrade</button></div>
                 <div><input class="inputFirst" type="search" placeholder="search"></div>
@@ -130,42 +131,41 @@
             </div>
             <div class="projectSetting plan ">
                 <div><img class="dropimage" src="./imges/drop.png" alt=""></div>
-                <div class="plan"> Planning </div>
+                <div class="plan hover"> Planning </div>
             </div>
             <div class="projectSetting myFirstApp">
                 <div><img class="imgep" src="./imges/plusBtn.png" alt=""></div>
                 <div>
-                    <p class="p">Add View</p>
+                    <p class="p hover">Add View</p>
                 </div>
             </div>
-            <div class="plan"> Development </div>
+            <div class="plan hover"> Development </div>
             <div class="projectSetting myFirstApp ">
                 <div><img src="./imges/incresasws.png" alt=""></div>
                 <div>
-                    <p class="p">Code</p>
+                    <p class="p hover">Code</p>
                 </div>
             </div>
             <div class="code">
-
             </div>
 
             <div class="second-navebar-insecond">
                 <div class="projectSetting proSetting">
                     <div><img src="./imges/folder.png" alt=""></div>
                     <div>
-                        <p> Project Pages </p>
+                        <p class="hover"> Project Pages </p>
                     </div>
                 </div>
                 <div class="projectSetting addsetting">
                     <div><img src="./imges/plus folder.png" alt=""></div>
                     <div>
-                        <p>Add Shortcut</p>
+                        <p class="hover">Add Shortcut</p>
                     </div>
                 </div>
                 <div class="projectSetting setting">
                     <div><img src="./imges/setting.png" alt=""></div>
                     <div>
-                        <p>Project setting</p>
+                        <p class="hover">Project setting</p>
                     </div>
                 </div>
             </div>
@@ -176,6 +176,8 @@
                 </div>
                 <div class="learn"> Learn More </div>
             </div>
+
+            <button id="hide-btn" onclick="func()"><img class="dropimage" src="./imges/drop.png" alt=""></button>
         </section>
 
         <!---------------------------------  Project Name & Share Other Optione ------------------------------->
@@ -200,8 +202,8 @@
 
             <div class="thirdbar">
                 <div class="profile">
-                    <div><input class="inputInprofile" type="text"> <img class="searchimage" src="./imges/search.png" p
-                            alt=""></div>
+                    <div><input class="inputInprofile" type="text" placeholder="search"> <img class="searchimage"
+                            src="./imges/search.png" p alt=""></div>
                     <div><img src="./imges/EmailDP.png" alt=""></div>
                     <div><img src="./imges/Profile Photo.png" alt=""></div>
                     <div><img src="./imges/profielPlus.png" alt=""></div>
@@ -211,9 +213,16 @@
 
                 <div class="secondProfile">
                     <div>Group By</div>
-                    <div class="Epic">
+                    <div class="Epic dropbtn">
                         <div>Epic</div>
-                        <div><img class="dropimage" src="./imges/drop.png" alt=""></div>
+                        <div class="dropdown">
+                            <img class="dropimage " src="./imges/drop.png" alt="">
+                            <div class="dropdown-content1">
+                                <a href="#">None <img class="dropimage1" src="./imges/drop.png" alt=""> </a>
+                                <a href="#">Assignee<img class="dropimage1" src="./imges/drop.png" alt=""> </a>
+                                <a href="#">Subtask<img class="dropimage1" src="./imges/drop.png" alt=""> </a>
+                            </div>
+                        </div>
                     </div>
                     <div><img src="./imges/Cloud.png" alt=""></div>
                     <div><img src="./imges/Incease.png" alt=""></div>
@@ -224,32 +233,35 @@
         </section>
 
         <!--------------------------------------- To Done Section ------------------------------------->
-        <section class="fourSection">
-            <div class="tododoneContainer">
-                <div>TO DO</div>
-                <div>IN PROGRESS</div>
-                <div>DONE</div>
-                <div id="PlusContainer">+</div>
-            </div>
-        </section>
 
-        <section class="root" id="root">
-            <div class="container" id="to-do">
-                <button class="btn firstbtn ">+ create issue </button>
-                <input type="text" id="issue" placeholder="write issue " class="hide issue" />
-            </div>
-            <div class="container secondContainer" id="progress">
-                <button class="btn secondbtn  hide"> + create issue</button>
-                <input type="text" id="issue" placeholder="write issue" class="hide issue " />
-            </div>
-            <div class="container thirdContainer" id="done">
-                <button class="btn thirdbtn hide"> + create issue</button>
-                <input type="text" id="issue" placeholder="write issue" class="hide issue " />
-            </div>
+        <seciton class="MoveThisSection">
+            <section class="fourSection">
+                <div class="tododoneContainer">
+                    <div>TO DO</div>
+                    <div>IN PROGRESS</div>
+                    <div>DONE</div>
+                    <div id="PlusContainer">+</div>
+                </div>
+            </section>
 
-            <div class="NewFourContainer">
-            </div>
-        </section>
+            <section class="root" id="root">
+                <div class="container" id="to-do">
+                    <button class="btn firstbtn ">+ create issue </button>
+                    <input type="text" id="issue" placeholder="write issue " class="hide issue" />
+                </div>
+                <div class="container secondContainer" id="progress">
+                    <button class="btn secondbtn  hide"> + create issue</button>
+                    <input type="text" id="issue" placeholder="write issue" class="hide issue " />
+                </div>
+                <div class="container thirdContainer" id="done">
+                    <button class="btn thirdbtn hide"> + create issue</button>
+                    <input type="text" id="issue" placeholder="write issue" class="hide issue " />
+                </div>
+
+                <div class="NewFourContainer">
+                </div>
+            </section>
+        </seciton>
 
         <!---------------------------------- To QuickButton Section ----------------------------------->
         <div class="Quickbutton">
@@ -268,6 +280,7 @@
 
     <!---------- to  add functionality --------->
     <script src="script.js"></script>
+
 </body>
 
 </html>

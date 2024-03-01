@@ -5,14 +5,12 @@
 }
 
 body {
-    /* width: 100%; */
-    /* height: 100vh; */
+
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     background: #ffffff;
 }
-
 
 .hide {
     display: none;
@@ -29,9 +27,8 @@ body {
 }
 
 
-/********* Navbar  Section ***********/
+/***************************************** Navbar  Section *********************************************/
 .navbar {
-    /* position: sticky; */
     top: 0;
     display: flex;
     flex-direction: column;
@@ -100,13 +97,6 @@ body {
     font-size: 12px;
 }
 
-.nav1:hover {
-    font-weight: 600;
-    color: blue;
-    margin-top: 15px;
-    border-bottom: 3px solid blue;
-}
-
 .logo {
     width: 33px;
     height: 30px;
@@ -134,13 +124,12 @@ body {
 }
 
 
-/************* To ASIDE SECTION***********/
+/************************************ To ASIDE SECTION***********************************/
 .aside {
-    z-index: -1;
+    /* z-index: -1; */
     margin-left: 10px;
     gap: 10px;
     width: 240px;
-    /* height: 100%; */
     padding: 2px;
     color: black;
     position: absolute;
@@ -176,7 +165,6 @@ body {
 }
 
 .code:hover {
-    /* color: blue; */
     border-bottom: 2px solid blue;
 }
 
@@ -236,8 +224,32 @@ body {
     display: flex;
 }
 
+.hover:hover {
+    background-color: rgb(238, 220, 220);
+    border-radius: 5px;
+    padding: 8px;
+    width: 150px;
+}
 
-/******** to add Above Container of To do OR To done **********/
+#hide-btn {
+    position: absolute;
+    left: 225px;
+    border-radius: 5px;
+    top: 1px;
+    border: 2px solid blue;
+    transform: rotate(450deg);
+}
+
+#hide-btn:hover {
+    border: 2px solid red;
+}
+
+.BColor {
+    background-color: red;
+    display: block;
+}
+
+/******************************** to add Above Container of To do OR To done *************************************/
 .firstbar {
     display: flex;
     justify-content: start;
@@ -300,7 +312,7 @@ body {
 }
 
 
-/************* to Four Section **************/
+/******************************************** to Four & Done Section *****************************************/
 .tododoneContainer {
     display: flex;
     justify-content: start;
@@ -329,8 +341,6 @@ body {
 .root {
     margin-top: 20px;
     margin-left: 300px;
-    /* width: 100%; */
-    /* height: 100vh; */
     background-color: #ffffff;
     display: flex;
     gap: 1rem;
@@ -343,6 +353,7 @@ body {
     border-radius: 5px;
     padding: 10px;
     overflow: scroll;
+    border: 1px solid red;
 }
 
 .firstbtn:hover {
@@ -387,9 +398,20 @@ body {
     align-items: center;
     height: auto;
 }
+.move{
+position: absolute;
+right: 0px;
+left: 1380px;
+margin-left: 20px;
+}
+.MoveThisSection1{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
 
 
-/********* Quickstart bittton  *************/
+/********************************** Quickstart bittton  ***************************************/
 .quickstart {
     width: 20px;
     height: 20px;
@@ -428,7 +450,7 @@ body {
 }
 
 
-/********** TO Fotter  ************/
+/*********************************** TO Fotter  ********************************/
 .attribution {
     position: fixed;
     bottom: 0;
@@ -444,37 +466,68 @@ body {
 }
 
 
-/* to drop down buton */
+/************************************ to drop down buton ************************************/
 
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+    right: 0px;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
     color: rgb(97, 94, 94);
-    padding: 12px 10px;
+    padding: 12px 20px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #eee1e1}
-  
-  .dropdown:hover .dropdown-content {
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #eee1e1
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  .dropimage1 {
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0px;
+}
+
+.dropdown-content1 a {
+    color: rgb(97, 94, 94);
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content1 a:hover {
+    background-color: #eee1e1
+}
+
+.dropdown:hover .dropdown-content1 {
+    display: block;
+}
+
+.dropimage1 {
     width: 16px;
     height: 15px;
     transform: rotate(265deg);
 }
-  

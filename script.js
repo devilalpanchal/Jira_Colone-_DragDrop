@@ -1,65 +1,49 @@
-///// My Code Start
+
+
 let secondbtn = document.querySelector('.secondbtn')
 let thirdbtn = document.querySelector('.thirdbtn')
 let secondContainer = document.querySelector('.secondContainer')
 let thirdContainer = document.querySelector('.thirdContainer')
 
 secondContainer.addEventListener('mouseover', () => {
-    secondbtn.classList.remove('hide')
-    secondbtn.style.background = "rgb(222, 241, 243)"
-    secondbtn.style.width = "100%"
-    secondbtn.style.height = "20%"
-    secondbtn.style.padding = "10px"
-    secondbtn.style.textAlign = "start";
-    secondbtn.style.paddingLeft = "20px";
-    secondbtn.insertAfter(".child-card");
+  secondbtn.classList.remove('hide')
+  secondbtn.style.background = "rgb(222, 241, 243)"
+  secondbtn.style.width = "100%"
+  secondbtn.style.height = "20%"
+  secondbtn.style.padding = "10px"
+  secondbtn.style.textAlign = "start";
+  secondbtn.style.paddingLeft = "20px";
+  secondbtn.insertAfter(".child-card");
 })
 secondContainer.addEventListener('mouseout', () => {
-    secondbtn.classList.add('hide')
+  secondbtn.classList.add('hide')
 })
 
 thirdContainer.addEventListener('mouseover', () => {
-    thirdbtn.classList.remove('hide')
-    thirdbtn.style.background = "rgb(222, 241, 243)"
-    thirdbtn.style.width = "100%"
-    thirdbtn.style.padding = "10px"
-    thirdbtn.style.height = "20%";
-    thirdbtn.style.textAlign = "start";
-    thirdbtn.style.paddingLeft = "20px";
+  thirdbtn.classList.remove('hide')
+  thirdbtn.style.background = "rgb(222, 241, 243)"
+  thirdbtn.style.width = "100%"
+  thirdbtn.style.padding = "10px"
+  thirdbtn.style.height = "20%";
+  thirdbtn.style.textAlign = "start";
+  thirdbtn.style.paddingLeft = "20px";
 })
 thirdContainer.addEventListener('mouseout', () => {
-    thirdbtn.classList.add('hide')
+  thirdbtn.classList.add('hide')
 })
-///// My Code End
-
+/////////////////////////////// My Code End ////////////////////////////////////
 
 let btn = document.querySelectorAll('.btn')
-console.log(btn)
 let input = document.querySelectorAll('.issue')
-console.log(input)
 
 btn.forEach((item) => {
-  console.log(item)
   item.addEventListener('click', (e) => {
-    console.log(e.target)
     let input = e.target.nextElementSibling
-    console.log(input)
     input.classList.remove('hide')
     e.target.classList.add('hide')
-    // let inputTag=e.target.nextElementSibling 
     input.focus()
-   
-    // input.classList.remove('hide')
-    // btn.classList.add('hide')
-    // input.focus()
   })
 })
-
-// btn.addEventListener('click', () => {
-//   input.classList.remove('hide')
-//   btn.classList.add('hide')
-//   input.focus()
-// })
 
 let draggingInfo = {
   draggingElement: null,
@@ -68,7 +52,6 @@ let draggingInfo = {
 
 input.forEach((item) => {
   item.addEventListener('keyup', (e) => {
-    console.log(e.target)
     let input = e.target
     if (e.keyCode == 13) {
       let value = input.value
@@ -77,180 +60,102 @@ input.forEach((item) => {
       card.className = 'child-card'
       card.style.padding = '10px'
       card.style.borderRadius = '5px'
-      card.style.marginTop = '5px'
+      card.style.marginTop = '50px'
       card.setAttribute('data-container', 'card')
       card.style.background = 'orange'
       card.draggable = 'true'
-      console.log(card);
 
- card.addEventListener('dragstart', (e) => {
-   console.log('hello')
-   draggingInfo.draggingElement = e.target
-   draggingInfo.draggingId = e.target.getAttribute('data-container')
-   console.log(draggingInfo.draggingElement, draggingInfo.draggingId)
- })
+      card.addEventListener('dragstart', (e) => {
+        draggingInfo.draggingElement = e.target
+        draggingInfo.draggingId = e.target.getAttribute('data-container')
+      })
 
       let parentContainer = e.target.parentElement
       parentContainer.appendChild(card)
       e.target.classList.add('hide')
       e.target.previousElementSibling.classList.remove('hide')
       e.target.value = ''
-
-      // console.log(value)
     }
   })
 })
 
-// to add function for quickstart button
+////////////////////// to add function for quickstart button////////////////////////////////
 let Quickbutton = document.querySelector('.Quickbutton')
-let QuickStart1= document.querySelector('.quickstart1')
+let QuickStart1 = document.querySelector('.quickstart1')
 let openQuick = document.querySelector('.yourCard')
 
-
-openQuick.addEventListener('click',()=>{
+openQuick.addEventListener('click', () => {
   Quickbutton.classList.remove('.hide')
 })
 
 let allContainer = document.querySelectorAll('.container')
-console.log(allContainer)
-
 allContainer.forEach((item) => {
   item.addEventListener('dragover', (event) => {
     event.preventDefault()
   })
 
   item.addEventListener('drop', (e) => {
-    console.log('dropping card')
     let card = draggingInfo.draggingElement
     card.id = draggingInfo.draggingId
     card.style.background = 'gray'
-
     let box = e.currentTarget
-    console.log(box)
     box.appendChild(card)
+    if (card == drop) {
+      card.style.background = 'green'
+    }
   })
 })
 
 
-if (card == drop) {
-
-  
-  card.style.background = 'green'
-  
-}
-
-// To add new Contaiener to write own done project
-
+// ////////////////To add new Contaiener to write own done project/////////////////////////
 
 let PlusContainer = document.querySelector('#PlusContainer')
-let NewFourContainerr= document.querySelector('.NewFourContainer')
-PlusContainer.addEventListener('click',()=>{
-  let NewContainer = document.createElement('div')
-  let NewInput = document.createElement('input')
-  NewInput.style.placeholder('write issue')
-  NewInput.style.classList.add('hide issue')
-  let Newbutton = document.createElement('button')
-  Newbutton.style.classList.add('btn thirdbtn hide')
-  Newbutton.textContent('+ create')
-  NewContainer.style.classList.add('container')
-  NewFourContainer.appendChild(PlusContainer)
-  PlusContainer.appendChild(Newbutton)
-  PlusContainer.appendChild(NewInpur)
-      console.log(PlusContainer)
-
+let FullMoveThisSection = document.querySelector('.MoveThisSection')
+let NewFourContainer = document.querySelector('.NewFourContainer')
+let AboveSmallContainer = document.querySelector('.tododoneContainer')
+let MovefourSection = document.querySelector('.fourSection')
+// for Small Conatainer
+PlusContainer.addEventListener('click',(e)=>{
+  MovefourSection.classList.add('fourSection1')
+  PlusContainer.classList.add('move')
+  FullMoveThisSection.classList.add('MoveThisSection1')
+let SmallContainer = document.createElement('div')
+SmallContainer.style.padding = "20px"
+AboveSmallContainer.appendChild(SmallContainer)
+console.log(AboveSmallContainer)
 })
 
-// btn.addEventListener('click', () => {
 
-//   input.classList.remove('hide')
-//   btn.classList.add('hide')
-//   input.focus()
-// })
 
-// let draggingInfo = {
-//   draggingElement: null,
-//   draggingId: null,
-// }
+// for Large container
+PlusContainer.addEventListener('click', (e) => {
+let newContainer = document.createElement('div')
+newContainer.classList.add('Ncontainer')
+newContainer.style.background = "#f7f8f9"
+  newContainer.style.width = "255px"
+  NewFourContainer.style.display = "flex"
+  NewFourContainer.style.gap  = "15px"
+  newContainer.style.height = "200px"
+  newContainer.style.padding = "10px"
+  newContainer.style.borderRadius = "5px"
+  newContainer.style.border = "1px solid red"
+  let newbtn = document.createElement('button')
+  newbtn.classList.add('btn thirdbtn hide')
+  NewFourContainer.append(newContainer)
 
-// input.addEventListener('keyup', (e) => {
-//   let todoContainer = document.querySelector('#to-do')
-//   if (e.keyCode == 13) {
-//     let value = input.value
-//     console.log(value)
-//     let card = document.createElement('div')
-//     card.innerText = value
-//     card.className = 'child-card'
-//     card.style.padding = '10px'
-//     card.style.borderRadius = '10px'
-//     card.style.marginTop = '5px'
-//     card.setAttribute('data-container', 'card')
-//     card.style.background = 'skyblue'
-//     card.draggable = 'true'
-//     todoContainer.append(card)
-//     // card.insertBefore(".btn");
+//  console.log(newContainer)
+})
 
-//     card.addEventListener('dragstart', (e) => {
-//       console.log('hello')
-//       draggingInfo.draggingElement = e.target
-//       draggingInfo.draggingId = e.target.getAttribute('data-container')
-//       console.log(draggingInfo.draggingElement, draggingInfo.draggingId)
-//     })
 
-//     input.classList.add('hide')
-//     btn.classList.remove('hide')
-//     input.value = ''
-//   }
-// })
+////////////////// TO HIDE BUTTON ASIDE //////////////////////////
 
-// let allContainer = document.querySelectorAll('.container')
-// console.log(allContainer)
+let hidebutton = document.querySelector('.aside')
 
-// allContainer.forEach((item) => {
-//   item.addEventListener('dragover', (event) => {
-//     event.preventDefault()
-//   })
-
-// item.addEventListener('drop',(e)=>{
-//   console.log('dropping card')
-//   let card=draggingInfo.draggingElement
-//   card.id=draggingInfo.draggingId
-// let box=e.currentTarget
-// console.log(box)
-// box.appendChild(card)
-
-// })
-
-// })
+function func() {
+  hidebutton.classList.toggle(".BColor");
+}
+console.log(hidebutton)
 
 
 
-// input.addEventListener('keyup', (e) => {
-//   let todoContainer = document.querySelector('#to-do')
-//   // console.log(e)
-//   if (e.keyCode == 13) {
-//     let value = input.value
-//     console.log(value)
-//     let card = document.createElement('div')
-//     card.innerText = value
-//     card.className = 'child-card'
-//     card.style.padding = '10px'
-//     card.style.borderRadius = '10px'
-//     card.style.marginTop = '5px'
-//     card.setAttribute('data-container', 'card')
-//     card.style.background = 'skyblue'
-//     card.draggable = 'true'
-//     todoContainer.append(card)
-
-    // card.addEventListener('dragstart', (e) => {
-    //   console.log('hello')
-    //   draggingInfo.draggingElement = e.target
-    //   draggingInfo.draggingId = e.target.getAttribute('data-container')
-    //   console.log(draggingInfo.draggingElement, draggingInfo.draggingId)
-    // })
-
-//     input.classList.add('hide')
-//     btn.classList.remove('hide')
-//     input.value = ''
-//   }
-// })
 
