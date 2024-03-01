@@ -13,7 +13,7 @@ secondContainer.addEventListener('mouseover', () => {
   secondbtn.style.padding = "10px"
   secondbtn.style.textAlign = "start";
   secondbtn.style.paddingLeft = "20px";
-  secondbtn.insertAfter(".child-card");
+  secondbtn.insertAfter(".child-card"); // sir se puchhna hai 
 })
 secondContainer.addEventListener('mouseout', () => {
   secondbtn.classList.add('hide')
@@ -30,6 +30,7 @@ thirdContainer.addEventListener('mouseover', () => {
 })
 thirdContainer.addEventListener('mouseout', () => {
   thirdbtn.classList.add('hide')
+
 })
 /////////////////////////////// My Code End ////////////////////////////////////
 
@@ -115,35 +116,56 @@ let NewFourContainer = document.querySelector('.NewFourContainer')
 let AboveSmallContainer = document.querySelector('.tododoneContainer')
 let MovefourSection = document.querySelector('.fourSection')
 // for Small Conatainer
-PlusContainer.addEventListener('click',(e)=>{
+PlusContainer.addEventListener('click', (e) => {
   MovefourSection.classList.add('fourSection1')
   PlusContainer.classList.add('move')
   FullMoveThisSection.classList.add('MoveThisSection1')
-let SmallContainer = document.createElement('div')
-SmallContainer.style.padding = "20px"
-AboveSmallContainer.appendChild(SmallContainer)
-console.log(AboveSmallContainer)
+  let SmallContainer = document.createElement('div')
+  SmallContainer.style.padding = "14px"
+  // SmallContainer.innerText = "click here"
+  let newinput = document.createElement('input')
+  newinput.placeholder = 'create issue'
+  newinput.style.outline = 'none'
+  newinput.style.border = '1px solid #f7f8f9'
+  newinput.style.backgroundColor = '#f7f8f9'
+  newinput.style.width = '225px'
+  newinput.style.fontSize = '12px'
+  AboveSmallContainer.appendChild(SmallContainer)
+  SmallContainer.append(newinput)
+  // console.log(AboveSmallContainer)
 })
 
 
 
 // for Large container
 PlusContainer.addEventListener('click', (e) => {
-let newContainer = document.createElement('div')
-newContainer.classList.add('Ncontainer')
-newContainer.style.background = "#f7f8f9"
+  let newContainer = document.createElement('div')
+  newContainer.classList.add('Ncontainer')
+  newContainer.style.background = "#f7f8f9"
   newContainer.style.width = "255px"
   NewFourContainer.style.display = "flex"
-  NewFourContainer.style.gap  = "15px"
+  NewFourContainer.style.gap = "15px"
   newContainer.style.height = "200px"
   newContainer.style.padding = "10px"
   newContainer.style.borderRadius = "5px"
   newContainer.style.border = "1px solid red"
-  let newbtn = document.createElement('button')
-  newbtn.classList.add('btn thirdbtn hide')
+
   NewFourContainer.append(newContainer)
 
-//  console.log(newContainer)
+  //  console.log(newContainer)
+})
+
+//************** */ For when we hover to new container*********************//
+
+let newContainerbtn = document.querySelector('.newContainer')
+
+newContainerbtn.addEventListener('click', () => {
+
+  let newbtn = document.createElement('button')
+  newbtn.classList.add('btn thirdbtn hide')
+  newbtn.textContent = '+ create issue';
+  newContainerbtn.appendChild(newbtn)
+  console.log(newbtn)
 })
 
 

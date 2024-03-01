@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+        
+    </div>
+    <script>
+     b = document.createElement('button');
+b.setAttribute('content', 'test content');
+b.setAttribute('class', 'btn');  
+b.textContent = 'test value';
+
+var wrapper = document.getElementById("divWrapper");
+wrapper.appendChild(b);
+document.body.appendChild(b)
+    </script>
+</body>
+</html>
