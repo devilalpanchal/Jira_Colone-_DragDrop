@@ -5,11 +5,12 @@
 }
 
 body {
-/* height: 100%; */
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     background: #ffffff;
+    height: 100vh;
+    width: 100vw;
 }
 
 .hide {
@@ -126,11 +127,11 @@ body {
 
 /************************************ To ASIDE SECTION***********************************/
 .aside {
-    /* z-index: -1; */
+    z-index: 1;
     margin-left: 10px;
     gap: 10px;
     width: 240px;
-    /* padding: 2px; */
+    padding: 2px;
     color: black;
     position: absolute;
     display: flex;
@@ -139,7 +140,7 @@ body {
     justify-content: start;
     flex-direction: column;
     border-right: 3px solid #e4e6ea;
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .aside:hover {
@@ -234,10 +235,11 @@ body {
 }
 
 #hide-btn {
+    z-index: 1;
     position: absolute;
-    left: 225px;
+    left: 237px;
     border-radius: 5px;
-    top: 1px;
+    top: 49px;
     border: 2px solid blue;
     transform: rotate(450deg);
 }
@@ -246,9 +248,8 @@ body {
     border: 2px solid red;
 }
 
-.BColor {
-    background-color: red;
-    display: block;
+.Color {
+    display: hide;
 }
 
 /******************************** to add Above Container of To do OR To done *************************************/
@@ -367,9 +368,10 @@ body {
     padding-left: 10px;
 }
 
-::-webkit-scrollbar {
+
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .btn {
     height: 20px;
@@ -406,12 +408,26 @@ right: 0px;
 left: 1380px;
 margin-left: 20px;
 }
-.MoveThisSection1{
-    position: absolute;
-    left: 0;
-    z-index: -1;
+.ScrollThis-Container{
+   width:100vw;
+   /* margin-left: 300px; */
+   /* border: 1px solid black; */
+   /* z-index: -1;  */
+   
 }
 
+.MoveThisSection{
+   
+    /* width:90vw; */
+    overflow-x: scroll; 
+    overflow-y: hidden;
+   
+   
+    
+}
+.foursection{
+    overflow-x: scroll;
+}
 
 /********************************** Quickstart bittton  ***************************************/
 .quickstart {

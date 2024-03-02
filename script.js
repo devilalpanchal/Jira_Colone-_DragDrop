@@ -85,6 +85,7 @@ let Quickbutton = document.querySelector('.Quickbutton')
 let QuickStart1 = document.querySelector('.quickstart1')
 let openQuick = document.querySelector('.yourCard')
 
+
 openQuick.addEventListener('click', () => {
   Quickbutton.classList.remove('.hide')
 })
@@ -107,7 +108,6 @@ allContainer.forEach((item) => {
   })
 })
 
-
 // ////////////////To add new Contaiener to write own done project/////////////////////////
 
 let PlusContainer = document.querySelector('#PlusContainer')
@@ -115,14 +115,14 @@ let FullMoveThisSection = document.querySelector('.MoveThisSection')
 let NewFourContainer = document.querySelector('.NewFourContainer')
 let AboveSmallContainer = document.querySelector('.tododoneContainer')
 let MovefourSection = document.querySelector('.fourSection')
+
+
 // for Small Conatainer
 PlusContainer.addEventListener('click', (e) => {
   MovefourSection.classList.add('fourSection1')
   PlusContainer.classList.add('move')
-  FullMoveThisSection.classList.add('MoveThisSection1')
   let SmallContainer = document.createElement('div')
   SmallContainer.style.padding = "14px"
-  // SmallContainer.innerText = "click here"
   let newinput = document.createElement('input')
   newinput.placeholder = 'create issue'
   newinput.style.outline = 'none'
@@ -132,9 +132,7 @@ PlusContainer.addEventListener('click', (e) => {
   newinput.style.fontSize = '12px'
   AboveSmallContainer.appendChild(SmallContainer)
   SmallContainer.append(newinput)
-  // console.log(AboveSmallContainer)
 })
-
 
 
 // for Large container
@@ -149,10 +147,7 @@ PlusContainer.addEventListener('click', (e) => {
   newContainer.style.padding = "10px"
   newContainer.style.borderRadius = "5px"
   newContainer.style.border = "1px solid red"
-
   NewFourContainer.append(newContainer)
-
-  //  console.log(newContainer)
 })
 
 //************** */ For when we hover to new container*********************//
@@ -160,24 +155,68 @@ PlusContainer.addEventListener('click', (e) => {
 let newContainerbtn = document.querySelector('.newContainer')
 
 newContainerbtn.addEventListener('click', () => {
-
   let newbtn = document.createElement('button')
-  newbtn.classList.add('btn thirdbtn hide')
+  newbtn.classList.add('btn')
   newbtn.textContent = '+ create issue';
   newContainerbtn.appendChild(newbtn)
   console.log(newbtn)
 })
 
+//////////// for scrolling new four contaienr*-**********************
+
+FullMoveThisSection.addEventListener('scroll',()=>{
+    // console.log('devilal')
+    console.log(FullMoveThisSection.scrollLeft)
+    console.log(FullMoveThisSection.scrollWidth)
+    console.log(FullMoveThisSection.clientWidth)
+})
 
 ////////////////// TO HIDE BUTTON ASIDE //////////////////////////
 
-let hidebutton = document.querySelector('.aside')
+// let hideAside = document.querySelector('.Aside1Container')
 
-function func() {
-  hidebutton.classList.toggle(".BColor");
+// ClickHide.addEventListener('click',()=>{
+//   hideAside.classList.add('.hide')
+// })
+function myFunction() {
+  //************** */ for margin remove from 300px to 0px *******************
+  let firstbar = document.querySelector('.firstbar')
+let Others12 = document.querySelector('.Others12')
+let thirdbar = document.querySelector('.thirdbar')
+let tododoneContainer = document.querySelector('.tododoneContainer')
+let root = document.querySelector('.root')
+
+let ClickHide = document.getElementById('hide-btn')
+let CenterContainer = document.querySelector('.CenterContainer')
+CenterContainer.style.marginLeft ="250px"
+
+  var x = document.getElementById("Aside1Container");
+ClickHide.style.position ="absolute"
+CenterContainer.style.position ="absolute"
+
+  if (x.style.display === "none") {
+    x.style.display = "block";
+ClickHide.style.left ="237px"
+CenterContainer.style.left ="10px"
+firstbar.style.marginLeft = "30px"
+Others12.style.marginLeft = "30px"
+thirdbar.style.marginLeft = "30px"
+tododoneContainer.style.marginLeft = "30px"
+root.style.marginLeft = "30px"
+
+
+  } else {
+    x.style.display = "none";
+ClickHide.style.left ="20px"
+CenterContainer.style.marginLeft="40px"
+firstbar.style.marginLeft = "30px"
+Others12.style.marginLeft = "30px"
+thirdbar.style.marginLeft = "30px"
+tododoneContainer.style.marginLeft = "30px"
+root.style.marginLeft = "30px"
+
+  }
 }
-console.log(hidebutton)
-
 
 
 
