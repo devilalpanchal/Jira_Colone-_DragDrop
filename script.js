@@ -1,5 +1,4 @@
 
-
 let secondbtn = document.querySelector('.secondbtn')
 let thirdbtn = document.querySelector('.thirdbtn')
 let secondContainer = document.querySelector('.secondContainer')
@@ -9,7 +8,7 @@ secondContainer.addEventListener('mouseover', () => {
   secondbtn.classList.remove('hide')
   secondbtn.style.background = "rgb(222, 241, 243)"
   secondbtn.style.width = "100%"
-  secondbtn.style.height = "20%"
+  secondbtn.style.height = "27%"
   secondbtn.style.padding = "10px"
   secondbtn.style.textAlign = "start";
   secondbtn.style.paddingLeft = "20px";
@@ -24,7 +23,7 @@ thirdContainer.addEventListener('mouseover', () => {
   thirdbtn.style.background = "rgb(222, 241, 243)"
   thirdbtn.style.width = "100%"
   thirdbtn.style.padding = "10px"
-  thirdbtn.style.height = "20%";
+  thirdbtn.style.height = "27%";
   thirdbtn.style.textAlign = "start";
   thirdbtn.style.paddingLeft = "20px";
 })
@@ -61,7 +60,7 @@ input.forEach((item) => {
       card.className = 'child-card'
       card.style.padding = '10px'
       card.style.borderRadius = '5px'
-      card.style.marginTop = '50px'
+      card.style.marginTop = '10px'
       card.setAttribute('data-container', 'card')
       card.style.background = 'orange'
       card.draggable = 'true'
@@ -84,7 +83,6 @@ input.forEach((item) => {
 let Quickbutton = document.querySelector('.Quickbutton')
 let QuickStart1 = document.querySelector('.quickstart1')
 let openQuick = document.querySelector('.yourCard')
-
 
 openQuick.addEventListener('click', () => {
   Quickbutton.classList.remove('.hide')
@@ -138,7 +136,7 @@ PlusContainer.addEventListener('click', (e) => {
 // for Large container
 PlusContainer.addEventListener('click', (e) => {
   let newContainer = document.createElement('div')
-  newContainer.classList.add('Ncontainer')
+  newContainer.classList.add('.Ncontainer')
   newContainer.style.background = "#f7f8f9"
   newContainer.style.width = "255px"
   NewFourContainer.style.display = "flex"
@@ -146,13 +144,12 @@ PlusContainer.addEventListener('click', (e) => {
   newContainer.style.height = "200px"
   newContainer.style.padding = "10px"
   newContainer.style.borderRadius = "5px"
-  newContainer.style.border = "1px solid red"
   NewFourContainer.append(newContainer)
 })
 
 //************** */ For when we hover to new container*********************//
 
-let newContainerbtn = document.querySelector('.newContainer')
+let newContainerbtn = document.querySelectorAll('.Ncontainer')
 
 newContainerbtn.addEventListener('click', () => {
   let newbtn = document.createElement('button')
@@ -162,22 +159,9 @@ newContainerbtn.addEventListener('click', () => {
   console.log(newbtn)
 })
 
-//////////// for scrolling new four contaienr*-**********************
-
-FullMoveThisSection.addEventListener('scroll',()=>{
-    // console.log('devilal')
-    console.log(FullMoveThisSection.scrollLeft)
-    console.log(FullMoveThisSection.scrollWidth)
-    console.log(FullMoveThisSection.clientWidth)
-})
 
 ////////////////// TO HIDE BUTTON ASIDE //////////////////////////
 
-// let hideAside = document.querySelector('.Aside1Container')
-
-// ClickHide.addEventListener('click',()=>{
-//   hideAside.classList.add('.hide')
-// })
 function myFunction() {
   //************** */ for margin remove from 300px to 0px *******************
   let firstbar = document.querySelector('.firstbar')
@@ -196,7 +180,7 @@ CenterContainer.style.position ="absolute"
 
   if (x.style.display === "none") {
     x.style.display = "block";
-ClickHide.style.left ="237px"
+ClickHide.style.left ="225px"
 CenterContainer.style.left ="10px"
 firstbar.style.marginLeft = "30px"
 Others12.style.marginLeft = "30px"
@@ -219,4 +203,55 @@ root.style.marginLeft = "30px"
 }
 
 
+// All Belove Code is Not working
 
+// For SETTING BUTTON
+// let startBtn = document.getElementById('DpImage')
+
+// let EmailSetup = document.querySelector('.EmailSetup')
+
+// var span = document.getElementsByClassName("close")[0];
+
+// startBtn.addEventListener('click',()=>{
+//   setTimeout(() => {
+//     EmailSetup.style.display = "block"
+//   }, 100);
+
+// })
+// // console.log(EmailSetup);
+
+// span.onclick = function() {
+//   EmailSetup.style.display = "none";
+// }
+
+// window.onclick = function(event) {
+  
+//   if (event.target == EmailSetup) {
+//     EmailSetup.style.display = "none"
+    
+//   }
+// }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  let startBtn = document.getElementById('DpImage');
+  let EmailSetup = document.querySelector('.EmailSetup');
+  let span = document.querySelector(".close");
+
+  startBtn.addEventListener('click', () => {
+    e.preventDefault()
+    setTimeout(() => {
+      EmailSetup.style.display = "block";
+    }, 100);
+  });
+
+  span.addEventListener('click', () => {
+    EmailSetup.style.display = "none";
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target == EmailSetup) {
+      EmailSetup.style.display = "none";
+    }
+  });
+});

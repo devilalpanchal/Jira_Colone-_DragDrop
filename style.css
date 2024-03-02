@@ -9,8 +9,6 @@ body {
     font-weight: 300;
     font-style: normal;
     background: #ffffff;
-    height: 100vh;
-    width: 100vw;
 }
 
 .hide {
@@ -123,15 +121,16 @@ body {
     width: 200px;
     padding: 5px;
 }
-
+.imageforinfo:hover{
+border: 1px solid red;
+}
 
 /************************************ To ASIDE SECTION***********************************/
 .aside {
     z-index: 1;
-    margin-left: 10px;
+    padding-left: 10px;
     gap: 10px;
     width: 240px;
-    padding: 2px;
     color: black;
     position: absolute;
     display: flex;
@@ -140,7 +139,7 @@ body {
     justify-content: start;
     flex-direction: column;
     border-right: 3px solid #e4e6ea;
-    height: 100vh;
+    height: 580px;
 }
 
 .aside:hover {
@@ -237,7 +236,7 @@ body {
 #hide-btn {
     z-index: 1;
     position: absolute;
-    left: 237px;
+    left: 225px;
     border-radius: 5px;
     top: 49px;
     border: 2px solid blue;
@@ -356,7 +355,6 @@ body {
     border-radius: 5px;
     padding: 10px;
     overflow: scroll;
-    border: 1px solid red;
 }
 
 .firstbtn:hover {
@@ -374,14 +372,14 @@ body {
 } */
 
 .btn {
-    height: 20px;
+    height: 45px;
     margin-top: 0px;
     outline: none;
     border: 1px solid aliceblue;
-    width: 50%;
+    width: 100%;
     font-size: 18px;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: rgb(230, 238, 245);
     margin-bottom: 1rem;
 }
 
@@ -410,21 +408,14 @@ margin-left: 20px;
 }
 .ScrollThis-Container{
    width:100vw;
-   /* margin-left: 300px; */
-   /* border: 1px solid black; */
-   /* z-index: -1;  */
-   
+   /* margin-left: 20px; */
 }
 
 .MoveThisSection{
-   
-    /* width:90vw; */
     overflow-x: scroll; 
     overflow-y: hidden;
-   
-   
-    
 }
+
 .foursection{
     overflow-x: scroll;
 }
@@ -443,7 +434,7 @@ margin-left: 20px;
 .quickstart1:hover {
     background: white;
     width: 20px;
-    height: 25px;
+    height: 20px;
 }
 
 .Quickbutton {
@@ -548,4 +539,9 @@ margin-left: 20px;
     width: 16px;
     height: 15px;
     transform: rotate(265deg);
+}
+
+/* for email */
+.Ncontainer:hover{
+    border: 2px solid red;
 }
