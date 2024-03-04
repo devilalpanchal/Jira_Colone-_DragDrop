@@ -1,7 +1,6 @@
 // for setting pop up
 let startBtn = document.getElementById('DpImage');
 let emailSetup = document.querySelector('.Mail');
-let mailSetup =document.getElementById('mail')
 let close = document.querySelector(".times");
 
 

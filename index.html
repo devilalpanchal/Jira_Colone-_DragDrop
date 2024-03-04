@@ -119,7 +119,7 @@
                 <div><img id="DpImage" class="imageforinfo" src="./imges/setting.png" alt=""></i></div>
 
 
-                <div><img class="imageforinfo" src="./imges/EmailDP.png" alt=""></div>
+                <div><img id="ProfileImage" class="imageforinfo" src="./imges/EmailDP.png" alt=""></div>
 
 
                 <img class="searchimage1" src="./imges/search.png" alt="">
@@ -129,7 +129,7 @@
             <div class="Mail hide" id="mail">
 
                 <div class="EmailSetup">
-                    <h2>Settings</h2>
+                    <h3>Settings</h3>
                     <button class="times">&times;</button>
                     <h5>PERSONAL SETTINGS</h5>
                     <div class="Displau-flex">
@@ -208,39 +208,42 @@
             </div>
 
             <!----------------- Profile Option Pop up------------->
-
-            <div class="profilePopUP">
-                <div>
-                    <h4>ACCOUNT</h4>
-                </div>
-                <div class="NameOfprofile">
-                    <div><img src="" alt=""></div>
-                    <div>
-                        <h5>Devilal Panchal</h5>
-                        <p>devilalpanchal551@gmail.com</p>
-                    </div>
-                </div>
-                <div>
-                    <h5>Manage account</h5>
-                </div>
-                <hr class="horizontalLine"!>
-                <div>
-                    <h5>UPGRADE</h5>
-                </div>
-                <div>
-                    <h5>Try the Standard plan <button>FREE 14-DAY TRIAL</button></h5>
-                    <hr class="horizontalLine">
-                </div>
-                <div><h5>JIRA</h5></div>
-                <div>Profile</div>
-                <div>Personal setting</div>
-                <div class="theme">
-                    <div>Theme</div>
-                    <div><img src="" alt=""></div>
-                </div>
-                <hr class="horizontalLine">
-                <div>Log out</div>
+<section class="profileofdevi hide">
+    <div class="profilePopUP ">
+        <button class="CloseProfile">&times;</button>
+        <div>
+            <h4>ACCOUNT</h4>
+        </div>
+        <div class="NameOfprofile">
+            <div><img src="./imges/Mypro.png" alt=""></div>
+            <div>
+                <h5>Devilal Panchal</h5>
+                <p>devilalpanchal551@gmail.com</p>
             </div>
+        </div>
+        <div>
+            <h5>Manage account</h5>
+        </div>
+        <hr class="horizontalLine"!>
+        <div>
+            <h5>UPGRADE</h5>
+        </div>
+        <div>
+            <h5>Try the Standard plan <button class="ActBtn">FREE 14-DAY TRIAL</button></h5>
+            <hr class="horizontalLine">
+        </div>
+        <div><h5>JIRA</h5></div>
+        <div>Profile</div>
+        <div>Personal setting</div>
+        <div class="theme">
+            <div>Theme</div>
+            <div><img class="dropimage themebtn " src="./imges/drop.png" alt=""></div>
+        </div>
+        <hr class="horizontalLine">
+        <div>Log out</div>
+    </div>
+</section>
+            
 
 
         </section>
@@ -421,6 +424,8 @@
         <!---------- to  add setting pop up  --------->
         <script src="setting.js"></script>
 
+        <!---------- to add Profile popUP ------------ -->
+        <script src="profile.js"></script>
 
 </body>
 

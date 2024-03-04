@@ -135,23 +135,21 @@ border: 1px solid red;
     width: 350px;
     margin-left: 990px;
     background: white;
+    border-radius: 5px 0px 0px 5px;
 }
 .EmailSetup{
+    color:black ;
     background-color: white;
     font-size: 15px;
     padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border-radius: 0px;
-box-shadow:  5px 5px 43px #ffffff,
-             -5px -5px 43px #ffffff;
 }
 .times{
     color: red;
     width: 20px;
     height: 20px;
-    /* padding: 10px; */
     font-size: 18px;
     font-weight: 500;
     position: absolute;
@@ -168,22 +166,55 @@ font-size: 12px;
 }
 
 /************ for profile popUp ****************/
-.profilePopUP{
+.profileofdevi{
+    height: 600px;
     z-index: 5;
+    border: 2px solid rgb(18, 101, 224);
+    background: white;
+    padding: 18px;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 1010px;
+}
+.profilePopUP{
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 18px ;
-    border: 2px solid red;
-    background: white;
-    padding: 15px;
+   
+
+}
+.NameOfprofile{
+    display: flex;
+    gap: 10px;
 }
 .horizontalLine{
     height: 4px;
     background: rgb(107, 112, 124);
 }
-
-
+.ActBtn{
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.theme{
+    display: flex;
+    gap: 215px;
+}
+.themebtn{
+    transform: rotate(-90deg);
+}
+.CloseProfile{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 25px;
+    top: 65px;
+    font-size: 16px;
+    color: red;
+}
 /************************************ To ASIDE SECTION***********************************/
 .aside {
     z-index: 1;
