@@ -124,6 +124,35 @@ body {
 .imageforinfo:hover{
 border: 1px solid red;
 }
+.Mail{
+    display: none;
+    border: 2px solid rgb(47, 0, 255);
+    height: 580px;
+    width: 350px;
+    margin-left: 990px;
+    background: white;
+}
+.EmailSetup{
+    background-color: white;
+    font-size: 15px;
+    padding: 15px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 0px;
+box-shadow:  5px 5px 43px #ffffff,
+             -5px -5px 43px #ffffff;
+}
+.Displau-flex{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+.Displau-flex div p{
+font-size: 12px;
+}
+
 
 /************************************ To ASIDE SECTION***********************************/
 .aside {
@@ -250,6 +279,9 @@ border: 1px solid red;
 .Color {
     display: hide;
 }
+#dropbtn{
+    border-radius: 50%;
+}
 
 /******************************** to add Above Container of To do OR To done *************************************/
 .firstbar {
@@ -366,8 +398,8 @@ border: 1px solid red;
     padding-left: 10px;
 }
 
-
-/* ::-webkit-scrollbar {
+/* 
+::-webkit-scrollbar {
     display: none;
 } */
 
