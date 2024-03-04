@@ -3,6 +3,7 @@ let secondbtn = document.querySelector('.secondbtn')
 let thirdbtn = document.querySelector('.thirdbtn')
 let secondContainer = document.querySelector('.secondContainer')
 let thirdContainer = document.querySelector('.thirdContainer')
+let CenterContainer = document.querySelector('.CenterContainer')
 
 secondContainer.addEventListener('mouseover', () => {
   secondbtn.classList.remove('hide')
@@ -31,6 +32,7 @@ thirdContainer.addEventListener('mouseout', () => {
   thirdbtn.classList.add('hide')
 
 })
+
 /////////////////////////////// My Code End ////////////////////////////////////
 
 let btn = document.querySelectorAll('.btn')
@@ -147,17 +149,6 @@ PlusContainer.addEventListener('click', (e) => {
   NewFourContainer.append(newContainer)
 })
 
-//************** */ For when we hover to new container*********************//
-
-let newContainerbtn = document.querySelectorAll('.Ncontainer')
-
-newContainerbtn.addEventListener('click', () => {
-  let newbtn = document.createElement('button')
-  newbtn.classList.add('btn')
-  newbtn.textContent = '+ create issue';
-  newContainerbtn.appendChild(newbtn)
-  console.log(newbtn)
-})
 
 
 ////////////////// TO HIDE BUTTON ASIDE //////////////////////////
@@ -171,7 +162,7 @@ let tododoneContainer = document.querySelector('.tododoneContainer')
 let root = document.querySelector('.root')
 
 let ClickHide = document.getElementById('hide-btn')
-let CenterContainer = document.querySelector('.CenterContainer')
+
 CenterContainer.style.marginLeft ="250px"
 
   var x = document.getElementById("Aside1Container");
@@ -203,55 +194,37 @@ root.style.marginLeft = "30px"
 }
 
 
-// All Belove Code is Not working
+// CODE For Setting POPUP 
 
-// For SETTING BUTTON
-// let startBtn = document.getElementById('DpImage')
+// this is my code 
+// let startBtn = document.getElementById('DpImage');
+// let emailSetup = document.querySelector('.Mail');
+// let mailSetup =document.getElementById('mail')
+// let close = document.querySelector(".times");
+  // startBtn.addEventListener('click', (e) => {
+  //   // console.log(event.target)
+  //   e.preventDefault()
+  //   // setTimeout(() => {
+  //   //   EmailSetup.style.display = "block";
+  //   // }, 20);
+  // });
 
-// let EmailSetup = document.querySelector('.EmailSetup')
+  // span.addEventListener('click', () => {
+  //   EmailSetup.style.display = "none";
+  // });
 
-// var span = document.getElementsByClassName("close")[0];
-
-// startBtn.addEventListener('click',()=>{
-//   setTimeout(() => {
-//     EmailSetup.style.display = "block"
-//   }, 100);
-
-// })
-// // console.log(EmailSetup);
-
-// span.onclick = function() {
-//   EmailSetup.style.display = "none";
-// }
-
-// window.onclick = function(event) {
-  
-//   if (event.target == EmailSetup) {
-//     EmailSetup.style.display = "none"
+  // window.addEventListener('click', (event) => {
+  //   console.log(event.target)
+  //   // console.log(EmailSetup)
     
-//   }
-// }
+  //   // if (event.target.id !== 'mail') {
+  //   //       mailSetup.style.display = "none";
+  //   //    }
+  // //   console.log(event.target)
+  // //   if (event.target == EmailSetup) {
+  // //     EmailSetup.style.display = "none";
+  // //   }
+  //  });
 
+  // And thsi is Shivam sir code
 
-document.addEventListener('DOMContentLoaded', function () {
-  let startBtn = document.getElementById('DpImage');
-  let EmailSetup = document.querySelector('.EmailSetup');
-  let span = document.querySelector(".close");
-
-  startBtn.addEventListener('click', () => {
-    e.preventDefault()
-    setTimeout(() => {
-      EmailSetup.style.display = "block";
-    }, 100);
-  });
-
-  span.addEventListener('click', () => {
-    EmailSetup.style.display = "none";
-  });
-
-  window.addEventListener('click', (event) => {
-    if (event.target == EmailSetup) {
-      EmailSetup.style.display = "none";
-    }
-  });
-});
