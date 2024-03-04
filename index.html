@@ -113,7 +113,7 @@
                 <div><button class="upgrade1">Upgrade</button></div>
                 <div><input class="inputFirst" type="search" placeholder="search"></div>
                 <div><img class="imageforinfo" src="./imges/bail.png" alt=""></div>
-                <div><img class="imageforinfo" src="./imges/questionmark.png" alt=""></div>
+                <div><img id="querryMark" class="imageforinfo" src="./imges/questionmark.png" alt=""></div>
 
 
                 <div><img id="DpImage" class="imageforinfo" src="./imges/setting.png" alt=""></i></div>
@@ -208,44 +208,90 @@
             </div>
 
             <!----------------- Profile Option Pop up------------->
-<section class="profileofdevi hide">
-    <div class="profilePopUP ">
-        <button class="CloseProfile">&times;</button>
-        <div>
-            <h4>ACCOUNT</h4>
-        </div>
-        <div class="NameOfprofile">
-            <div><img src="./imges/Mypro.png" alt=""></div>
-            <div>
-                <h5>Devilal Panchal</h5>
-                <p>devilalpanchal551@gmail.com</p>
-            </div>
-        </div>
-        <div>
-            <h5>Manage account</h5>
-        </div>
-        <hr class="horizontalLine"!>
-        <div>
-            <h5>UPGRADE</h5>
-        </div>
-        <div>
-            <h5>Try the Standard plan <button class="ActBtn">FREE 14-DAY TRIAL</button></h5>
-            <hr class="horizontalLine">
-        </div>
-        <div><h5>JIRA</h5></div>
-        <div>Profile</div>
-        <div>Personal setting</div>
-        <div class="theme">
-            <div>Theme</div>
-            <div><img class="dropimage themebtn " src="./imges/drop.png" alt=""></div>
-        </div>
-        <hr class="horizontalLine">
-        <div>Log out</div>
-    </div>
-</section>
-            
+            <section class="profileofdevi hide">
+                <div class="profilePopUP ">
+                    <button class="CloseProfile">&times;</button>
+                    <div>
+                        <h4>ACCOUNT</h4>
+                    </div>
+                    <div class="NameOfprofile">
+                        <div><img src="./imges/Mypro.png" alt=""></div>
+                        <div>
+                            <h5>Devilal Panchal</h5>
+                            <p>devilalpanchal551@gmail.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Manage account</h5>
+                    </div>
+                    <hr class="horizontalLine" !>
+                    <div>
+                        <h5>UPGRADE</h5>
+                    </div>
+                    <div>
+                        <h5>Try the Standard plan <button class="ActBtn">FREE 14-DAY TRIAL</button></h5>
+                        <hr class="horizontalLine">
+                    </div>
+                    <div>
+                        <h5>JIRA</h5>
+                    </div>
+                    <div>Profile</div>
+                    <div>Personal setting</div>
+                    <div class="theme">
+                        <div>Theme</div>
+                        <div><img class="dropimage themebtn " src="./imges/drop.png" alt=""></div>
+                    </div>
+                    <hr class="horizontalLine">
+                    <div>Log out</div>
+                </div>
+            </section>
 
+            <!--------- Qestion ask qestions section opoup --------->
 
+            <section class="qestionsMark hide">
+                <div class="qeustion">
+                    <button class="close1">&times;</button>
+                    <div>
+                        <div class="help">  Help</div>
+                        <div>
+                            <img class="searcj" src="./imges/search.png" alt="">
+                            <input class="articles" type="text" placeholder="Search help articles">
+                        </div>
+                    </div>
+                    <div class="jiraQuerry">
+                        <div><img class="imaj" src="./imges/A1.png" alt=""></div>
+                        <div>Find out what's changed in jira</div>
+                    </div>
+                    <div class="jiraQuerry">
+                        <div><img class="imaj" src="./imges/B2.png" alt=""></div>
+                        <div>Browser complete documentation</div>
+                    </div>
+                    <div class="jiraQuerry">
+                        <div><img class="imaj" src="./imges/C3.png" alt=""></div>
+                        <div>Learn with Atlassian University</div>
+                    </div>
+                    <div class="jiraQuerry">
+                        <div><img class="imaj" src="./imges/D4.png" alt=""></div>
+                        <div>Ask our community forum</div>
+                    </div>
+                    <div class="jiraQuerry">
+                        <div><img class="imaj" src="./imges/E5.png" alt=""></div>
+                        <div>Contact support</div>
+                    </div>
+                    <div class="jiraQuerry">
+                        <div><img class="imaj" src="./imges/F6.png" alt=""></div>
+                        <div>Give feedback about jira</div>
+                    </div>
+                    <div class="jiraQuerry">
+                        <div><img class="imaj" src="./imges/G8.png" alt=""></div>
+                        <div>Keyboard shortcuts</div>
+                    </div>
+                    <div class="jiraQuerry">
+                        <div><img class="imaj" src="./imges/H9.png" alt=""></div>
+                        <div>Get jira Mobile</div>
+                    </div>
+                </div>
+            </section>
         </section>
 
 
@@ -426,6 +472,9 @@
 
         <!---------- to add Profile popUP ------------ -->
         <script src="profile.js"></script>
+
+        <!---------- Question mark pop up ---------->
+        <script src="Question.js"></script>
 
 </body>
 
