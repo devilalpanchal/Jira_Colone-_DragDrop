@@ -25,8 +25,8 @@ body {
     background: #ffffff;
 }
 
-.close{
-    display:none;
+.close {
+    display: none;
 }
 
 /***************************************** Navbar  Section *********************************************/
@@ -124,11 +124,15 @@ body {
     width: 200px;
     padding: 5px;
 }
-.imageforinfo:hover{
-border: 1px solid red;
+
+.imageforinfo:hover {
+    border: 1px solid rgb(82, 82, 83);
+    border-radius: 100%;
+    background: rgb(179, 147, 147);
 }
+
 /************ setting popUp **************/
-.Mail{
+.Mail {
     z-index: 5;
     border: 2px solid rgb(47, 0, 255);
     height: 580px;
@@ -137,8 +141,9 @@ border: 1px solid red;
     background: white;
     border-radius: 5px 0px 0px 5px;
 }
-.EmailSetup{
-    color:black ;
+
+.EmailSetup {
+    color: black;
     background-color: white;
     font-size: 15px;
     padding: 15px;
@@ -146,7 +151,8 @@ border: 1px solid red;
     flex-direction: column;
     gap: 10px;
 }
-.times{
+
+.times {
     color: red;
     width: 20px;
     height: 20px;
@@ -156,17 +162,19 @@ border: 1px solid red;
     right: 25px;
     top: 70px;
 }
-.Displau-flex{
+
+.Displau-flex {
     display: flex;
     justify-content: space-around;
     gap: 25px;
 }
-.Displau-flex div p{
-font-size: 12px;
+
+.Displau-flex div p {
+    font-size: 12px;
 }
 
 /************ for profile popUp ****************/
-.profileofdevi{
+.profileofdevi {
     height: 600px;
     z-index: 5;
     border: 2px solid rgb(18, 101, 224);
@@ -175,24 +183,28 @@ font-size: 12px;
     border-radius: 5px 0px 0px 5px;
     margin-left: 1010px;
 }
-.profilePopUP{
-    
+
+.profilePopUP {
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 18px ;
-   
+    gap: 18px;
+
 
 }
-.NameOfprofile{
+
+.NameOfprofile {
     display: flex;
     gap: 10px;
 }
-.horizontalLine{
+
+.horizontalLine {
     height: 4px;
     background: rgb(107, 112, 124);
 }
-.ActBtn{
+
+.ActBtn {
     color: white;
     background-color: blue;
     border: none;
@@ -200,14 +212,17 @@ font-size: 12px;
     margin-bottom: 10px;
     border-radius: 2px;
 }
-.theme{
+
+.theme {
     display: flex;
     gap: 215px;
 }
-.themebtn{
+
+.themebtn {
     transform: rotate(-90deg);
 }
-.CloseProfile{
+
+.CloseProfile {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -218,7 +233,7 @@ font-size: 12px;
 }
 
 /************ for Qeustion Mark pop Up **********/
-.qestionsMark{
+.qestionsMark {
     height: 650px;
     z-index: 5;
     border: 2px solid rgb(18, 101, 224);
@@ -227,35 +242,34 @@ font-size: 12px;
     border-radius: 5px 0px 0px 5px;
     margin-left: 1010px;
 }
-.qeustion{
+
+.qeustion {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 20px;
 }
-.help{
+
+.help {
     text-align: center;
     font-size: 20px;
 }
-.articles{
+
+.articles {
     width: 290px;
     padding: 10px;
     outline: none;
     border: 2px solid rgb(86, 86, 112);
 }
-.jiraQuerry{
+
+.jiraQuerry {
     display: flex;
     justify-content: space-around;
     gap: 10px;
-    font-size:15px ;
-    
-}
-.imaj{
-    /* aspect-ratio: 2/3;
-    object-fit: cover;
-    float: left; */
+    font-size: 15px;
 
 }
+
 .close1 {
     width: 20px;
     height: 20px;
@@ -265,11 +279,65 @@ font-size: 12px;
     font-size: 16px;
     color: red;
 }
-.searcj{
+
+.searcj {
     position: absolute;
     right: 40px;
     top: 102px;
+    position: fixed;
 }
+
+/******* Bail SEction PopUP ******/
+.NotificationContainer {
+    height: 650px;
+    z-index: 5;
+    border: 2px solid rgb(18, 101, 224);
+    background: white;
+    padding: 18px;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 920px;
+}
+
+.noteHead {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.sidebar {
+    padding-top: 20px;
+    display: flex;
+    justify-content: start;
+}
+
+.secondbar {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.notigicationImage {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.lastInput {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.heakerLine {
+    margin-top: 10px;
+    height: 4px;
+    background-color: black;
+}
+
+.sidebar div>P {
+    font-size: 13px;
+}
+
 
 /************************************ To ASIDE SECTION***********************************/
 .aside {
@@ -280,7 +348,7 @@ font-size: 12px;
     color: black;
     position: absolute;
     display: flex;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     align-items: 10px;
     justify-content: start;
     flex-direction: column;
@@ -396,7 +464,8 @@ font-size: 12px;
 .Color {
     display: hide;
 }
-#dropbtn{
+
+#dropbtn {
     border-radius: 50%;
 }
 
@@ -549,23 +618,25 @@ font-size: 12px;
     align-items: center;
     height: auto;
 }
-.move{
-position: absolute;
-right: 0px;
-left: 1380px;
-margin-left: 20px;
-}
-.ScrollThis-Container{
-   width:100vw;
-   /* margin-left: 20px; */
+
+.move {
+    position: absolute;
+    right: 0px;
+    left: 1380px;
+    margin-left: 20px;
 }
 
-.MoveThisSection{
-    overflow-x: scroll; 
+.ScrollThis-Container {
+    width: 100vw;
+    /* margin-left: 20px; */
+}
+
+.MoveThisSection {
+    overflow-x: scroll;
     overflow-y: hidden;
 }
 
-.foursection{
+.foursection {
     overflow-x: scroll;
 }
 
@@ -637,7 +708,7 @@ margin-left: 20px;
     background-color: #f9f9f9;
     width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 5;
     right: 0px;
     margin-top: 10px;
 }
@@ -691,6 +762,6 @@ margin-left: 20px;
 }
 
 /* for email */
-.Ncontainer:hover{
+.Ncontainer:hover {
     border: 2px solid red;
 }

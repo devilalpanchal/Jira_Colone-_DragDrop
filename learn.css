@@ -1,0 +1,73 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(193, 215, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
+.mainContainer{
+    background-color: white;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+    height: 400px;
+    border: 1px solid blue;
+    padding: 20px;
+}
+.sp{
+    color: blue;
+}
+.btn{
+    padding: 5px;
+}
+.helpfull{
+    display: flex;
+    gap: 20px;
+}
+
+
+.yes{
+    border: 2px solid rgb(166, 255, 0);
+    padding: 80px;
+    position: absolute;
+    background: white;
+    left: 400px;
+}
+.yourpoint{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.input{
+    padding: 20px;
+    outline: none;
+    width: 400px;
+}
+
+.closetn5{
+    width: 150px;
+    padding: 5px;
+    margin-left: 130px;
+    color: white;
+    background-color: #e05bf1;
+    border: none;
+    border-radius: 10px;
+}
+.closetn5:hover{
+    background-color: aqua;
+}

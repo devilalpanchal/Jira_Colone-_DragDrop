@@ -112,7 +112,7 @@
                 <div><button class="createBtn">create</button></div>
                 <div><button class="upgrade1">Upgrade</button></div>
                 <div><input class="inputFirst" type="search" placeholder="search"></div>
-                <div><img class="imageforinfo" src="./imges/bail.png" alt=""></div>
+                <div><img id="notificationsss" class="imageforinfo" src="./imges/bail.png" alt=""></div>
                 <div><img id="querryMark" class="imageforinfo" src="./imges/questionmark.png" alt=""></div>
 
 
@@ -123,6 +123,106 @@
 
 
                 <img class="searchimage1" src="./imges/search.png" alt="">
+
+                <!--------------- For create button opoUp ------------------->
+                <section class="Create">
+                    <div class="createForButton">
+
+                        <div class="firstBar">
+                            <div>
+                                <div>check btn</div>
+                                <div>
+                                    <h5>New task</h5>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div><img src="" alt=""></div>
+                                <div><img src="" alt=""></div>
+                                <div><img src="" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="secondBar">
+                            <div>
+                                <p>Required fields are marked with an asterisk</p>
+                            </div>
+                            <div>
+                                <p>Project</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <div><img src="" alt=""></div>
+                                    <div>
+                                        <h5>My Kanban Project [Devi"S
+                                            Team]</h5>
+                                    </div>
+                                </div>
+                                <div><img src="" alt=""></div>
+                            </div>
+
+                            <div class="thirdBar">
+                                <div>
+                                    <div>
+                                        <p>issue type</p>
+                                    </div>
+                                    <div>
+
+                                        <div><img src="" alt=""></div>
+                                        <div>Task</div>
+                                        <div><img src="" alt=""></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p>Status</p>
+                                    </div>
+                                    <div>
+
+                                        <div>TO DO</div>
+                                        <div><img Learn about issue typessrc="" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Learn about issue types</p>
+                        </div>
+
+                        <div class="fourthBar">
+                            <div>
+                                <p>Summary</p>
+                            </div>
+                            <div><input type="text"></div>
+                            <div>
+                                <p>Summary is required</p>
+                            </div>
+                        </div>
+
+                        <div class="fifthBar">
+                            <div>
+                                <p>Description</p>
+                            </div>
+                            <div class="Alfhabet
+                            ">
+                                <div><img src="" alt=""></div>
+                                <div><img src="" alt=""></div>
+                                <div><img src="" alt=""></div>
+                                <div><img src="" alt=""></div>
+                                <div><img src="" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="FifthBart">
+                            <div><img src="" alt=""></div>
+                            <div>
+                                <p>Create another issue</p>
+                            </div>
+                            <div><button>Create</button></div>
+                        </div>
+
+                    </div>
+                </section>
             </div>
 
             <!------------ setting Pop Up --------------->
@@ -252,7 +352,7 @@
                 <div class="qeustion">
                     <button class="close1">&times;</button>
                     <div>
-                        <div class="help">  Help</div>
+                        <div class="help"> Help</div>
                         <div>
                             <img class="searcj" src="./imges/search.png" alt="">
                             <input class="articles" type="text" placeholder="Search help articles">
@@ -291,6 +391,45 @@
                         <div>Get jira Mobile</div>
                     </div>
                 </div>
+            </section>
+            <!--------- Bail  ask notifications section opoup --------->
+
+            <section class="NotificationContainer hide">
+                <section class="notificationSmallContainer">
+                    <button class="close1 closenotifications">&times;</button>
+
+                    <div class="noteHead">
+
+                        <div>
+                            <h2>Notifications</h2>
+                        </div>
+                        <div class="sidebar">
+                            <div>
+                                <p>Only show unread</p>
+                            </div>
+                            <div><img class="imgeofside" src="./imges/toggle.png" alt=""></div>
+                            <div><img src="./imges/addhj.png" alt=""></div>
+                            <div><img src="./imges/three....png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="secondbar">
+                        <div>Direct</div>
+                        <div>Watching</div>
+                    </div>
+                    <hr class="heakerLine">
+                    <div><img class="notigicationImage" src="./imges/notifications.png" alt=""></div>
+                    <div>
+                        <p class="lastInput">You have no notifications from the last 30 days.</p>
+                    </div>
+
+                    <div class="lastInput">
+                        <div>
+                            <p><span>Pro tip: to move through notifications , <a href="">See all shortcuts</a></span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
             </section>
         </section>
 
@@ -352,7 +491,7 @@
                             <p>You're in a team-managed project</p>
 
                         </div>
-                        <div class="learn"> Learn More </div>
+                        <div class="learn"> <a href="learnMore.html">Learn More </a> </div>
                     </div>
 
                 </section>
@@ -475,6 +614,9 @@
 
         <!---------- Question mark pop up ---------->
         <script src="Question.js"></script>
+
+        <!---------- Notifications pop up ---------->
+        <script src="notification.js"></script>
 
 </body>
 
