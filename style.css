@@ -778,6 +778,7 @@ body {
     border: 1px solid rgb(57, 63, 73);
     background: white;
     padding: 20px;
+    font-size: 15px;
 }
 
 .createForButton {
@@ -820,6 +821,7 @@ padding: 10px;
 
 }
 .thirdBar{
+    margin-top: 20px;
     display: flex;
     gap: 20px;
 }
@@ -833,7 +835,7 @@ width: 220px;
 .task2{
     border:1px solid rgb(68, 59, 59) ;
     display: flex;
-    gap: 20px;
+    gap: 135px;
 padding: 10px;
 width: 220px;
 }
@@ -866,5 +868,30 @@ width: 60px;
 }
 .createAnother{
     display: flex;
-    gap: 180px;
+    gap: 100px;
 }
+.task512{
+    display: flex;
+    gap: 128px;
+}
+.creat223{
+    width: 140px;
+    padding: 7px;
+        color: rgb(245, 245, 245);
+        background: rgb(202, 93, 224);
+        outline: none;
+        border: none;
+
+}
+.creat223:hover{
+    background: blue;
+    border-radius: 5px;
+}
+
+.OPPopUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
