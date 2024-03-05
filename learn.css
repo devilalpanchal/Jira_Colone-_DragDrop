@@ -72,3 +72,14 @@ body{
     background-color: aqua;
 }
 
+.Closebtn{
+    position: absolute;
+    right: 460px ;
+    top: 70px;
+    font-size: 30px;
+}
+.Closebtn:hover{
+    width: 20px;
+    height: 40px;
+    background-color: red;
+}

@@ -584,10 +584,10 @@ body {
     padding-left: 10px;
 }
 
-/* 
+
 ::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .btn {
     height: 45px;
@@ -628,7 +628,6 @@ body {
 
 .ScrollThis-Container {
     width: 100vw;
-    /* margin-left: 20px; */
 }
 
 .MoveThisSection {
@@ -892,6 +891,5 @@ width: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
 }
 
