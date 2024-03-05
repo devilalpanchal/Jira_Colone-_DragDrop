@@ -765,3 +765,106 @@ body {
 .Ncontainer:hover {
     border: 2px solid red;
 }
+
+
+/******************* to create pop up ***************/
+.Create{
+    top: 20px;
+    width: 500px;
+    position: absolute;
+    height: 600px;
+    z-index: 4;
+    left: 400px;
+    border: 1px solid rgb(57, 63, 73);
+    background: white;
+    padding: 20px;
+}
+
+.createForButton {
+    display: flex; 
+    justify-content: start;
+     flex-direction: column;
+     gap: 15px;
+}
+.Alfhabet{
+    display: flex;
+}
+.firstBar{
+    border: 1px solid rgb(216, 192, 192);
+    display: flex;
+    gap: 240px;
+    padding: 10px;
+}
+.newtask{
+    display: flex;
+    gap: 20px;
+}
+.allicon{
+    display: flex;
+    gap: 20px;
+}
+
+.secondBar{
+    display: flex;
+    flex-direction: column;
+}
+.Project01{
+    display: flex;
+    gap: 140px;
+    border:1px solid rgb(71, 67, 67) ;
+padding: 10px;
+}
+.Kanban1{
+    display: flex;
+    gap: 10px;
+
+}
+.thirdBar{
+    display: flex;
+    gap: 20px;
+}
+.task1{
+    display: flex;
+    gap: 10px;
+    border:1px solid rgb(73, 69, 69) ;
+padding: 10px;
+width: 220px;
+}
+.task2{
+    border:1px solid rgb(68, 59, 59) ;
+    display: flex;
+    gap: 20px;
+padding: 10px;
+width: 220px;
+}
+.input2{
+    width: 460px;
+    outline: none;
+    padding: 15px;
+}
+.Alfhabet{
+    display: flex;
+    gap:50px;
+    border: 1px solid rgb(93, 93, 116);
+padding: 10px;
+}
+.Alfhabet div{
+    border: 1px solid rgb(46, 46, 65);
+padding: 10px;
+width: 60px;
+
+}
+
+.Alfhabet div>img{
+    font-size: 40px;
+}
+.SixthBar{
+    padding: 10px;
+    border: 1px solid rgb(73, 67, 67);
+    display: flex;
+    gap: 15px;
+}
+.createAnother{
+    display: flex;
+    gap: 180px;
+}

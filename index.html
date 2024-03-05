@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -109,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div><button class="createBtn">create</button></div>
+                <div><button id="OpenMatk" class="createBtn">create</button></div>
                 <div><button class="upgrade1">Upgrade</button></div>
                 <div><input class="inputFirst" type="search" placeholder="search"></div>
                 <div><img id="notificationsss" class="imageforinfo" src="./imges/bail.png" alt=""></div>
@@ -125,77 +130,79 @@
                 <img class="searchimage1" src="./imges/search.png" alt="">
 
                 <!--------------- For create button opoUp ------------------->
-                <section class="Create">
+                <section class="Create hide">
                     <div class="createForButton">
 
                         <div class="firstBar">
-                            <div>
-                                <div>check btn</div>
+                            <div class="newtask">
+                                <div><i class="fa-solid fa-square-check" style="color: #1730ee;"></i></div>
                                 <div>
-                                    <h5>New task</h5>
+                                    <p>New task</p>
                                 </div>
                             </div>
-                            <div>
-
-                                <div><img src="" alt=""></div>
-                                <div><img src="" alt=""></div>
-                                <div><img src="" alt=""></div>
+                            <div class="allicon">
+                                <div><i class="fa-solid fa-minus"></i></div>
+                                <div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+                                <div><i id="closeMark" class="fa-solid fa-xmark"></i></div>
                             </div>
                         </div>
 
                         <div class="secondBar">
                             <div>
-                                <p>Required fields are marked with an asterisk</p>
+                                <p>Required fields are marked with an asterisk <i class="fa-solid fa-star"
+                                        style="color: #FFD43B;"></i> </p>
+
                             </div>
                             <div>
-                                <p>Project</p>
+                                <p>Project <i class="fa-solid fa-star heloostar" style="color: #FFD43B;"></i> </p>
                             </div>
-                            <div>
-                                <div>
-                                    <div><img src="" alt=""></div>
+                            <div class="Project01">
+                                <div class="Kanban1">
+                                    <div><i class="fa-solid fa-circle-user" style="color: #63E6BE;"></i></div>
                                     <div>
-                                        <h5>My Kanban Project [Devi"S
-                                            Team]</h5>
+                                        <p>My Kanban Project [Devi"S
+                                            Team]</p>
                                     </div>
                                 </div>
-                                <div><img src="" alt=""></div>
+                                <div><i class="fa-solid fa-caret-down"></i></div>
                             </div>
 
                             <div class="thirdBar">
                                 <div>
                                     <div>
-                                        <p>issue type</p>
+                                        <p>issue type <i class="fa-solid fa-star" style="color: #FFD43B;"></i></p>
                                     </div>
-                                    <div>
+                                    <div class="task1">
 
-                                        <div><img src="" alt=""></div>
+                                        <div><i class="fa-solid fa-square-check" style="color: #1730ee;"></i></div>
                                         <div>Task</div>
-                                        <div><img src="" alt=""></div>
+                                        <div><i class="fa-solid fa-caret-down"></i></div>
                                     </div>
                                 </div>
                                 <div>
                                     <div>
                                         <p>Status</p>
                                     </div>
-                                    <div>
+                                    <div class="task2">
 
                                         <div>TO DO</div>
-                                        <div><img Learn about issue typessrc="" alt=""></div>
+                                        <div><i class="fa-solid fa-caret-down"></i></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <p>Learn about issue types</p>
+                            <p style="color: blue;">Learn about issue types</p>
                         </div>
 
                         <div class="fourthBar">
                             <div>
                                 <p>Summary</p>
                             </div>
-                            <div><input type="text"></div>
+                            <div><input class="input2" type="text"></div>
                             <div>
-                                <p>Summary is required</p>
+                                <p style="color: red;"> <i class="fa-solid fa-circle-exclamation"
+                                        style="color: #dd2403;"></i> Summary is required</p>
                             </div>
                         </div>
 
@@ -203,22 +210,23 @@
                             <div>
                                 <p>Description</p>
                             </div>
-                            <div class="Alfhabet
-                            ">
-                                <div><img src="" alt=""></div>
-                                <div><img src="" alt=""></div>
-                                <div><img src="" alt=""></div>
-                                <div><img src="" alt=""></div>
-                                <div><img src="" alt=""></div>
+                            <div class="Alfhabet">
+                                <div><i class="fa-solid fa-a" style="color:blue;"></i></div>
+                                <div><i class="fa-solid fa-b" style="color:blue;"></i></div>
+                                <div><i class="fa-solid fa-c" style="color:blue;"></i></div>
+                                <div><i class="fa-solid fa-d" style="color: blue;"></i></div>
+                                <div><i class="fa-solid fa-e" style="color: blue;"></i></div>
                             </div>
                         </div>
 
-                        <div class="FifthBart">
-                            <div><img src="" alt=""></div>
-                            <div>
-                                <p>Create another issue</p>
+                        <div class="SixthBar">
+                            <div><i class="fa-regular fa-square" style="color: #eceff3;"></i>
                             </div>
-                            <div><button>Create</button></div>
+                            <div class="createAnother">
+                                <p>Create another issue</p>
+                                <div><button>Create</button></div>
+                            </div>
+                            
                         </div>
 
                     </div>
@@ -617,6 +625,9 @@
 
         <!---------- Notifications pop up ---------->
         <script src="notification.js"></script>
+
+        <!---------- Create Button pop up ---------->
+        <script src="create.js"></script>
 
 </body>
 
