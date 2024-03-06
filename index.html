@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <div><button id="OpenMatk" class="createBtn">create</button></div>
-                <div><button class="upgrade1">Upgrade</button></div>
+                <div><button id="StartUpgradeContainer" class="upgrade1">Upgrade</button></div>
                 <div><input class="inputFirst" type="search" placeholder="search"></div>
                 <div><img id="notificationsss" class="imageforinfo" src="./imges/bail.png" alt=""></div>
                 <div><img id="querryMark" class="imageforinfo" src="./imges/questionmark.png" alt=""></div>
@@ -130,6 +130,61 @@
 
 
                 <img class="searchimage1" src="./imges/search.png" alt="">
+
+                <!--------------- FOR UPGRADE POP UP ---------------->
+                <section class="UpgradeContainer hide">
+
+                    <div class="upgrade">
+                        <span class="closeUpgarde">&times;</span>
+                        <div>
+                            <img class="imgeofUPgrade" src="./imges/upgrade.png" alt="">
+                        </div>
+                        <div class="UpgradeRightSidebar">
+                            <div>
+                                <h3>Upgrade to Standard</h3>
+                            </div>
+                            <div>
+                                <p > Increase your user and storage limits by upgrading to Standard-free during the
+                                    14-day trial. <span style="color: blue;">Learn more about your current plan</span></p>
+                            </div>
+
+                            <div  class="userandteam">
+                                <p> <b>Take your team from</b> </p>
+                                <p>You're invited 1 out of 10 users (upgrade for unlimited users)</p>
+
+                                <div class="userflex">
+                                    <div> <i class="fa-solid fa-user" style="color: #3c0ad1;"></i></div>
+                                    <div> <i class="fa-solid fa-user" style="color: #3c0ad1;"></i></div>
+                                    <div> <i class="fa-solid fa-user" style="color: #3c0ad1;"></i></div>
+                                    <div><i class="fa-solid fa-user" style="color: #3c0ad1;"></i></div>
+                                    <div><i class="fa-solid fa-user" style="color: #3c0ad1;"></i></div>
+                                    <div><i class="fa-solid fa-user" style="color: #3c0ad1;"></i></div>
+                                    <div><i class="fa-solid fa-user" style="color: #3c0ad1;"></i></div>
+                                    <div><i class="fa-solid fa-user" style="color: #3c0ad1;"></i></div>
+                                    <div><i class="fa-solid fa-user" style="color: #3c0ad1;"></i></div>
+                                    <div><i class="fa-solid fa-user" style="color: #3c0ad1;"></i></div>
+                                </div>
+                                <div><p> <b>Increase your storage</b> </p></div>
+                                <div><p>You're used 0 GB storage (upgrade for 250 GB)</p></div>
+                                <div class="hideen"> </div>
+                            </div>
+
+                            <div><p> <b>The Standard plan also includes:</b> </p></div>
+
+                            <div>
+                                <div><i class="fa-solid fa-square-check" style="color: #be6ce4;"></i> One-on-one technichal support</div>
+                                <div> <i class="fa-solid fa-square-check" style="color: #bd64e0;"></i> Configurable permissons</div>
+                                <div> <i class="fa-solid fa-square-check" style="color: #ad5fd1;"></i> User roles</div>
+                                <div> <i class="fa-solid fa-square-check" style="color: #9153d8;"></i> And much more!</div>
+                            </div>
+                            <div class="btnContainer">
+                                <button class="MaybeButyon1">Maybe later</button>
+                                <button class="MaybeButyon2">Try Standard</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
 
                 <!--------------- For create button opoUp ------------------->
                 <section class="Create hide">
@@ -639,5 +694,9 @@
         <!---------- Create Button pop up ---------->
         <script src="create.js"></script>
 
+        <!---------- Create Upgrade pop up ---------->
+        <script src="upgrade.js"></script>
+
 </body>
+
 </html>

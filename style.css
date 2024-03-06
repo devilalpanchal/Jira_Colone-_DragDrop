@@ -767,7 +767,7 @@ body {
 
 
 /******************* to create pop up ***************/
-.Create{
+.Create {
     top: 20px;
     width: 500px;
     position: absolute;
@@ -781,115 +781,212 @@ body {
 }
 
 .createForButton {
-    display: flex; 
+    display: flex;
     justify-content: start;
-     flex-direction: column;
-     gap: 15px;
+    flex-direction: column;
+    gap: 15px;
 }
-.Alfhabet{
+
+.Alfhabet {
     display: flex;
 }
-.firstBar{
+
+.firstBar {
     border: 1px solid rgb(216, 192, 192);
     display: flex;
     gap: 240px;
     padding: 10px;
 }
-.newtask{
-    display: flex;
-    gap: 20px;
-}
-.allicon{
+
+.newtask {
     display: flex;
     gap: 20px;
 }
 
-.secondBar{
+.allicon {
+    display: flex;
+    gap: 20px;
+}
+
+.secondBar {
     display: flex;
     flex-direction: column;
 }
-.Project01{
+
+.Project01 {
     display: flex;
     gap: 140px;
-    border:1px solid rgb(71, 67, 67) ;
-padding: 10px;
+    border: 1px solid rgb(71, 67, 67);
+    padding: 10px;
 }
-.Kanban1{
+
+.Kanban1 {
     display: flex;
     gap: 10px;
 
 }
-.thirdBar{
+
+.thirdBar {
     margin-top: 20px;
     display: flex;
     gap: 20px;
 }
-.task1{
+
+.task1 {
     display: flex;
     gap: 10px;
-    border:1px solid rgb(73, 69, 69) ;
-padding: 10px;
-width: 220px;
+    border: 1px solid rgb(73, 69, 69);
+    padding: 10px;
+    width: 220px;
 }
-.task2{
-    border:1px solid rgb(68, 59, 59) ;
+
+.task2 {
+    border: 1px solid rgb(68, 59, 59);
     display: flex;
     gap: 135px;
-padding: 10px;
-width: 220px;
+    padding: 10px;
+    width: 220px;
 }
-.input2{
+
+.input2 {
     width: 460px;
     outline: none;
     padding: 15px;
 }
-.Alfhabet{
+
+.Alfhabet {
     display: flex;
-    gap:50px;
+    gap: 50px;
     border: 1px solid rgb(93, 93, 116);
-padding: 10px;
+    padding: 10px;
 }
-.Alfhabet div{
+
+.Alfhabet div {
     border: 1px solid rgb(46, 46, 65);
-padding: 10px;
-width: 60px;
+    padding: 10px;
+    width: 60px;
 
 }
 
-.Alfhabet div>img{
+.Alfhabet div>img {
     font-size: 40px;
 }
-.SixthBar{
+
+.SixthBar {
     padding: 10px;
     border: 1px solid rgb(73, 67, 67);
     display: flex;
     gap: 15px;
 }
-.createAnother{
+
+.createAnother {
     display: flex;
     gap: 100px;
 }
-.task512{
+
+.task512 {
     display: flex;
     gap: 128px;
 }
-.creat223{
+
+.creat223 {
     width: 140px;
     padding: 7px;
-        color: rgb(245, 245, 245);
-        background: rgb(202, 93, 224);
-        outline: none;
-        border: none;
+    color: rgb(245, 245, 245);
+    background: rgb(202, 93, 224);
+    outline: none;
+    border: none;
 
 }
-.creat223:hover{
+
+.creat223:hover {
     background: blue;
     border-radius: 5px;
 }
 
-.OPPopUp{
+.OPPopUp {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*********** For the Upgrade button ********/
+.UpgradeContainer{
+    z-index: 5;
+
+}
+.upgrade {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(187, 172, 172);
+    gap: 20px;
+    background: white;
+    width: 730px;
+    height: 602px;
+    margin-right: 1220px;
+    font-size: 14px;
+}
+
+.userandteam {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid rgb(247, 247, 247);
+    width: 415px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #f1efef;
+    padding: 25px;
+}
+
+.userflex {
+    display: flex;
+    gap: 7px;
+}
+
+.userflex div {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 50%;
+}
+.UpgradeRightSidebar{
+    display: flex;
+    flex-direction: column;
+    gap:5px ;
+    padding: 20px;
+    padding-right: 40px;
+}
+.hideen{
+    width: 350px;
+    border: 1px solid rgb(218, 212, 212);
+    border-radius: 20px;
+    padding: 10px;
+}
+.closeUpgarde{
+    position: absolute;
+    top: 10px;
+    right: 310px;
+    font-size: 35px;
+    color: red;
+}
+.imgeofUPgrade{
+    height: 600px;
+}
+.btnContainer{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.MaybeButyon1{
+    padding: 8px;
+    width: 120px;
+    background: blue;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.MaybeButyon2{
+    padding: 8px;
+    width: 120px;
+}
