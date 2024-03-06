@@ -15,3 +15,16 @@ document.querySelector('#heroContainer').addEventListener('click',()=>{
     UpgradeContainer.classList.add('hide')
 
 })
+
+let createNewdiv = document.querySelector('.createNewdiv')
+document.querySelector('.MaybeButyon2').addEventListener('click',()=>{
+    setTimeout(() => {
+        document.location.reload();
+      }, 10);
+      let creatediv = document.createElement('div')
+      let imgtag = document.createElement('img')
+      img.src = 'https://tenor.com/search/burency-system-updates-gifs'
+      createNewdiv.append(creatediv)
+      creatediv.appendChild(img)
+})
+

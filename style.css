@@ -9,6 +9,7 @@ body {
     font-weight: 300;
     font-style: normal;
     background: #ffffff;
+    height: 100vh;
 }
 
 .hide {
@@ -563,16 +564,19 @@ body {
     margin-left: 300px;
     background-color: #ffffff;
     display: flex;
+    position: relative;
     gap: 1rem;
 }
 
 .container {
     width: 255px;
     height: 200px;
+   /* position: absolute; */
     background-color: #f7f8f9;
     border-radius: 5px;
     padding: 10px;
-    overflow: scroll;
+    /* flex-wrap: nowrap; */
+    /* overflow: scroll; */
 }
 
 .firstbtn:hover {
@@ -585,9 +589,9 @@ body {
 }
 
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .btn {
     height: 45px;
@@ -622,17 +626,20 @@ body {
 .move {
     position: absolute;
     right: 0px;
-    left: 1380px;
+    left: 1080px;
     margin-left: 20px;
 }
 
 .ScrollThis-Container {
-    width: 100vw;
+    height: 500px;
 }
 
 .MoveThisSection {
-    overflow-x: scroll;
-    overflow-y: hidden;
+ 
+ overflow-x: scroll;
+ overflow-y: hidden;
+    border:1px solid red;
+   
 }
 
 .foursection {
@@ -905,9 +912,13 @@ body {
 }
 
 .OPPopUp {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
+    width:100%;
+    left: 0px;
 }
 
 /*********** For the Upgrade button ********/

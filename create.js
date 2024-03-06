@@ -3,15 +3,19 @@
 const closeMark = document.querySelector('#closeMark')
 const OpenMark = document.querySelector('#OpenMatk')
 const Create = document.querySelector('.Create')
+const CreateFor = document.querySelector('.createForButton')
 const CreatePopUp = document.querySelector('.creat223')
 const PopUpContainer = document.querySelector('.OPPopUp')
 
 function ToggleThisContainer() {
     Create.classList.toggle('hide')
+  PopUpContainer.classList.toggle('hide')
+
+    
 }
 
-OpenMark.addEventListener('click',ToggleThisContainer)
 closeMark.addEventListener('click',ToggleThisContainer)
+OpenMark.addEventListener('click',ToggleThisContainer)
 
 document.querySelector('#heroContainer').addEventListener('click',()=>{
     Create.classList.add('hide')
@@ -21,7 +25,9 @@ document.querySelector('#heroContainer').addEventListener('click',()=>{
 
 
 CreatePopUp.addEventListener('click',()=>{
-
+// console.log(create);
+console.log('hello');
+  Create.classList.toggle('hide')
   let NewPopUp = document.createElement('div')
   NewPopUp.classList.add('.newpop')
   NewPopUp.style.width = "500px"
@@ -86,5 +92,13 @@ CreatePopUp.addEventListener('click',()=>{
   underContainer.appendChild(newDiv2)
   underContainer.appendChild(input2)
   underContainer.appendChild(button)
-//   Create.classList.add('hide')
+
+
+
+})
+
+
+
+OpenMark.addEventListener('click',()=>{
+  PopUpContainer.classList.toggle('hide')
 })

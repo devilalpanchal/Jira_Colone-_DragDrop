@@ -136,7 +136,11 @@ PlusContainer.addEventListener('click', (e) => {
 
 
 // for Large container
+let RootContainer = document.querySelector('.root')
+let ToDoContainer = document.querySelector('.tododoneContainer')
 PlusContainer.addEventListener('click', (e) => {
+  ToDoContainer.style.marginLeft = "0px"
+  RootContainer.style.marginLeft= "0px"
   let newContainer = document.createElement('div')
   newContainer.classList.add('.Ncontainer')
   newContainer.style.background = "#f7f8f9"
@@ -147,6 +151,8 @@ PlusContainer.addEventListener('click', (e) => {
   newContainer.style.padding = "10px"
   newContainer.style.borderRadius = "5px"
   NewFourContainer.append(newContainer)
+  // PlusContainer.classList.add('move')
+
 })
 
 
