@@ -14,5 +14,10 @@
 # Task added through button
 ![create task done02](https://github.com/devilalpanchal/Jira_Colone-_DragDrop/assets/144801878/325a6948-fef5-44c9-80dd-40ce6487b9b0)
 # Task in progress
+![task in progress](https://github.com/devilalpanchal/Jira_Colone-_DragDrop/assets/144801878/754fd60b-e564-4b76-a127-8e384e8ac79a)
+# Task is done
+![taskdone](https://github.com/devilalpanchal/Jira_Colone-_DragDrop/assets/144801878/cf53c7f3-b6a5-4eca-8355-4243d93f98e5)
+# Create main component button
+![add more option ](https://github.com/devilalpanchal/Jira_Colone-_DragDrop/assets/144801878/2b7810f9-85c3-470c-b9e7-1fb2df7308d9)
 
 
